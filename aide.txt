@@ -1,0 +1,28 @@
+**bateau**
+-> Affiche le classement actuel du clan pour le jour de guerre
+**cherche_id [@Nom_Discord#1234]**
+-> Thivabot envoie l'ID du joueur demandé si elle le connaît
+**class_jour_gdc**
+-> Affiche le classement des joueurs au jour de guerre actuel
+**class_v**
+-> Affiche le top victoires en guerre des joueurs du clan
+**coffres**
+-> Liste les coffres d'un joueur
+**connexion**
+-> Affiche date et heure de connexion de tous les membres du clan
+**connexion_j [ID]**
+-> Affiche date et heure de connexion d'un joueur
+**emote [nom]**
+-> Thivabot envoie l'emote demandée en GIF
+**igdc**
+-> Affiche le nombre de participants journalier
+**ij [ID]**
+-> Renvoie le lien RoyaleAPI vers le joueur demandé
+**info_clan [ID]**
+-> Renvoie le lien RoyaleAPI vers le clan demandé 
+**memorise [ID]**
+-> Thivabot enregistre l'ID donné et l'associe à ton compte Discord
+**supprime**
+-> Thivabot supprime ton ID enregistré si cela a été fait précédemment
+**topfr**
+-> Affiche le classement du clan en GDC
