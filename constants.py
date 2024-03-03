@@ -6,6 +6,8 @@ APICRURL="https://proxy.royaleapi.dev/v1"
 
 #Emojis
 GDC_EMOJI="<:gdc:966422842621194320>"
+PRINCESS_GLASSES="<:princess_glasses:1100023542977925151>"
+KING_CRY="<:king_cry:1213834559305687070>"
 GDC_MENTION=""#"<@&963060425757429821>"
 
 #Channels
@@ -18,6 +20,3 @@ CLASS_JOUR_CHAN=1126883173947686973
 
 #Messages
 GDC_MSG="\nLe jour de guerre n°"
-
-#Images coffres
-IMG="https://raw.githubusercontent.com/RoyaleAPI/cr-api-assets/master/chests/"

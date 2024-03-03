@@ -37,11 +37,11 @@ class Topfr(commands.Cog):
 
                         if obj_i['previousRank'] < obj_i['rank']:
                         
-                            await ctx.send("Le clan a perdu en rang <:king_cry:966424394681425990>")
+                            await ctx.send("Le clan a perdu en rang "+KING_CRY)
                     
                         else:
 
-                            await ctx.send("Le clan a gagné en rang <:princess_glasses:1100023542977925151>")
+                            await ctx.send("Le clan a gagné en rang "+PRINCESS_GLASSES)
 
                         await ctx.send("Ancien rang = **"+str(obj_i['previousRank'])+"** -> nouveau rang = **"+str(obj_i['rank'])+"**")
                         return

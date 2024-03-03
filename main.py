@@ -18,6 +18,20 @@ scheduler = AsyncIOScheduler()
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!T ",intents=intents)
 
+# Fonction pour traduire les noms des rôles en Français 
+async def trad_role(string):
+    trad = ""
+    match string:
+        case "member":
+            trad += "Membre"
+        case "elder":
+            trad += "Aîné"    
+        case "coLeader":
+            trad += "Chef adjoint"
+        case "leader":
+            trad += "Chef"
+    return trad
+
 @bot.event
 async def on_ready():
 
@@ -281,7 +295,7 @@ async def log_du_clan():
 
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
-                        await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+str(obj_i['role'])+" -> "+str(obj_j['role']))
+                        await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+trad_role(obj_i['role'])+" -> "+trad_role(obj_j['role']))
 
         else:
 
@@ -295,7 +309,7 @@ async def log_du_clan():
 
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
-                        await channel.send("Changement de rôle : "+str(obj_j['name'])+" | "+str(obj_j['role'])+" -> "+str(obj_i['role']))
+                        await channel.send("Changement de rôle : "+str(obj_j['name'])+" | "+trad_role(obj_j['role'])+" -> "+trad_role(obj_i['role']))
 
 
         with open("./database/clan.json","w",encoding="utf-8") as f:

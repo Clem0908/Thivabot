@@ -34,44 +34,106 @@ class Coffres(commands.Cog):
 
             await ctx.send("Je recherche les prochains coffres de : **"+str(data1['name'])+"**...\n")
             i = 0
-
+            
             for i in range(i,len(data['items'])):
 
                 obj_i = data['items'][i]
 
                 if obj_i['name'] == "Silver Chest":
-                    await ctx.send(str(obj_i['index'])+" | 3h")
-                    await ctx.send(IMG+"chest-silver.png")
+                    
+                    await ctx.send(str(obj_i['index'])+" | 3h | Coffre en Argent")
+                    f = open("./chests/Silver_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Golden Chest":
-                    await ctx.send(str(obj_i['index'])+" | 8h")
-                    await ctx.send(IMG+"chest-gold.png")
+                    
+                    await ctx.send(str(obj_i['index'])+" | 8h | Coffre en Or")
+                    f = open("./chests/Golden_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Magical Chest":
-                    await ctx.send(str(obj_i['index'])+" | 12h")
-                    await ctx.send(IMG+"chest-magical.png")
+                    
+                    await ctx.send(str(obj_i['index'])+" | 12h | Coffre Magique")
+                    f = open("./chests/Magical_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Overflowing Gold Crate":
-                    await ctx.send(str(obj_i['index'])+" | 12h")
-                    await ctx.send(IMG+"chest-overflowgoldcrate.png")
+                    
+                    await ctx.send(str(obj_i['index'])+" | 12h | Cage d'Or Énorme")
+                    f = open("./chests/Overflowing_Gold_Crate.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Plentiful Gold Crate":
-                    await ctx.send(str(obj_i['index'])+" | 8h")
-                    await ctx.send(IMG+"chest-plentifulgoldcrate.png")
+                    
+                    await ctx.send(str(obj_i['index'])+" | 8h | Cage d'Or Remplie")
+                    f = open("./chests/Plentiful_Gold_Crate.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+                
                 if obj_i['name'] == "Gold Crate":
-                    await ctx.send(str(obj_i['index'])+" | 3h")
-                    await ctx.send(IMG+"chest-goldcrate.png")
+
+                    await ctx.send(str(obj_i['index'])+" | 3h | Cage d'Or")
+                    f = open("./chests/Gold_Crate.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Legendary Chest":
-                    await ctx.send(str(obj_i['index'])+" | 1j")
-                    await ctx.send(IMG+"chest-legendary.png")
+
+                    await ctx.send(str(obj_i['index'])+" | 1j | Coffre Légendaire")
+                    f = open("./chests/Legendary_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Mega Lightning Chest":
-                    await ctx.send(str(obj_i['index'])+" | 1j")
-                    await ctx.send(IMG+"chest-megalightning.png")
+
+                    await ctx.send(str(obj_i['index'])+" | 1j | Méga Coffre Foudre")
+                    f = open("./chests/Mega_Lightning_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+                    
                 if obj_i['name'] == "Giant Chest":
-                    await ctx.send(str(obj_i['index'])+" | 12h")
-                    await ctx.send(IMG+"chest-giant.png")
+
+                    await ctx.send(str(obj_i['index'])+" | 12h | Coffre Géant")
+                    f = open("./chests/Giant_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Royal Wild Chest":
-                    await ctx.send(str(obj_i['index'])+" | 1j")
-                    await ctx.send(IMG+"chest-royalwild.png")
+                    
+                    await ctx.send(str(obj_i['index'])+" | 1j | Coffre Joker Royal")
+                    f = open("./chests/Royal_Wild_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
                 if obj_i['name'] == "Epic Chest":
-                    await ctx.send(str(obj_i['index'])+" | 12h")
-                    await ctx.send(IMG+"chest-epic.png")
+
+                    await ctx.send(str(obj_i['index'])+" | 12h | Coffre Épique")
+                    f = open("./chests/Epic_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
+
+                if obj_i['name'] == "Tower Troop Chest":
+
+                    await ctx.send(str(obj_i['index'])+" | 0h | Coffre de Tour")
+                    f = open("./chests/Tower_Troop_Chest.png","rb")
+                    df = discord.File(fp = f)
+                    await ctx.send(file = df)
+                    f.close()
 
             await ctx.send("J'ai terminé de lister les coffres de : **"+str(data1['name'])+"**")
 
