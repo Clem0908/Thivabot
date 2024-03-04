@@ -73,7 +73,7 @@ class Coffres(commands.Cog):
 
                 if obj_i['name'] == "Plentiful Gold Crate":
                     
-                    await ctx.send(str(obj_i['index'])+" | 8h | Cage d'Or Remplie")
+                    await ctx.send(str(obj_i['index'])+" | 8h | Cage d'Or Moyenne")
                     f = open("./chests/Plentiful_Gold_Crate.png","rb")
                     df = discord.File(fp = f)
                     await ctx.send(file = df)
