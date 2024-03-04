@@ -5,6 +5,7 @@ import asyncio
 import requests
 from constants import *
 import tokens
+import time
 
 class Coffres(commands.Cog):
 
@@ -134,6 +135,8 @@ class Coffres(commands.Cog):
                     df = discord.File(fp = f)
                     await ctx.send(file = df)
                     f.close()
+
+                time.sleep(1)
 
             await ctx.send("J'ai terminé de lister les coffres de : **"+str(data1['name'])+"**")
 
