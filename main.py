@@ -294,7 +294,7 @@ async def log_du_clan():
 
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
-                        await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+trad_role(obj_i['role'])+" -> "+trad_role(obj_j['role']))
+                        await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+trad_role(str(obj_i['role']))+" -> "+trad_role(str(obj_j['role'])))
 
         else:
 
@@ -308,7 +308,7 @@ async def log_du_clan():
 
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
-                        await channel.send("Changement de rôle : "+str(obj_j['name'])+" | "+trad_role(obj_j['role'])+" -> "+trad_role(obj_i['role']))
+                        await channel.send("Changement de rôle : "+str(obj_j['name'])+" | "+trad_role(str(obj_j['role']))+" -> "+trad_role(str(obj_i['role'])))
 
 
         with open("./database/clan.json","w",encoding="utf-8") as f:
