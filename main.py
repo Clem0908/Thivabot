@@ -155,7 +155,6 @@ async def gdc(channel_id, message):
     elif today.weekday() == 3 and dt.hour > 12:
         await command(ina_chan)
 
-scheduler.add_job(bye,'cron',day_of_week='wed',hour=10,minute=0,args=[DEBUG_CHAN],misfire_grace_time=180)
 scheduler.add_job(gdc,'cron',day_of_week='mon',hour=8,minute=0,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"4 va se terminer\n"+GDC_MENTION],misfire_grace_time=180)
 scheduler.add_job(gdc,'cron',day_of_week='mon',hour=HEURE,minute=MINUTE,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"4 va se terminer\n"+GDC_MENTION],misfire_grace_time=180)
 scheduler.add_job(gdc,'cron',day_of_week='thu',hour=HEURE,minute=MINUTE,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"1 vient de débuter\n"+GDC_MENTION],misfire_grace_time=180)
