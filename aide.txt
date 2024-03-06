@@ -8,6 +8,8 @@
 -> Affiche le top victoires en guerre des joueurs du clan
 **coffres**
 -> Liste les coffres d'un joueur
+**coffres_texte**
+-> Liste les coffres d'un joueur sous forme de texte
 **connexion**
 -> Affiche date et heure de connexion de tous les membres du clan
 **connexion_j [ID]**

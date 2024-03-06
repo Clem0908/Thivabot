@@ -74,6 +74,7 @@ async def main():
         await bot.load_extension("cogs.emote")
         await bot.load_extension("cogs.hgdc")
         await bot.load_extension("cogs.class_jour_gdc")
+        await bot.load_extension("cogs.coffres_texte")
 
         await bot.start(BOTTOKEN)
 
@@ -294,7 +295,11 @@ async def log_du_clan():
 
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
-                        await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+trad_role(str(obj_i['role']))+" -> "+trad_role(str(obj_j['role'])))
+                        a_role = ""
+                        a_role = await trad_role(str(obj_j['role']))
+                        n_role = ""
+                        n_role = await trad_role(str(obj_i['role']))
+                        await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+a_role+" -> "+n_role)
 
         else:
 
@@ -308,7 +313,11 @@ async def log_du_clan():
 
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
-                        await channel.send("Changement de rôle : "+str(obj_j['name'])+" | "+trad_role(str(obj_j['role']))+" -> "+trad_role(str(obj_i['role'])))
+                        a_role = ""
+                        a_role = await trad_role(str(obj_j['role']))
+                        n_role = ""
+                        n_role = await trad_role(str(obj_i['role']))
+                        await channel.send("Changement de rôle : "+str(obj_j['name'])+" | "+a_role+" -> "+n_role)
 
 
         with open("./database/clan.json","w",encoding="utf-8") as f:
