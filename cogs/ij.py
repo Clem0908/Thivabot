@@ -57,7 +57,7 @@ class Ij(commands.Cog):
                 else:
                     await ctx.send(":video_game: Joueur depuis : "+str(annees)+" an(s), "+str(mois)+" mois et "+str(jours)+" jour(s)")
                 
-                new_msg = await ctx.send("\n<:gdc:966422842621194320> Nombre de victoires en guerre de "+str(name)+ " : **"+str(nb)+"**") 
+                new_msg = await ctx.send("\n"+GDC_EMOJI+" Nombre de victoires en guerre de "+str(name)+ " : **"+str(nb)+"**") 
                 await asyncio.sleep(2)
                 await new_msg.add_reaction("🟩")
                 await new_msg.add_reaction("🟥")
@@ -71,7 +71,7 @@ class Ij(commands.Cog):
                 else:
                     await ctx.send(":video_game: Joueur depuis : "+str(annees)+" an(s), "+str(mois)+" mois et "+str(jours)+" jour(s)")
 
-                new_msg = await ctx.send("<:gdc:966422842621194320> Nombre de victoires en guerre : **0 ou < 10**")
+                new_msg = await ctx.send(GDC_EMOJI+" Nombre de victoires en guerre : **0 ou < 10**")
                 await asyncio.sleep(2)
                 await new_msg.add_reaction("🟩")
                 await new_msg.add_reaction("🟥")

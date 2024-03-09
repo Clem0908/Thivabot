@@ -296,9 +296,9 @@ async def log_du_clan():
                     if (obj_i['tag'] == obj_j['tag']) and (obj_i['role'] != obj_j['role']):
 
                         a_role = ""
-                        a_role = await trad_role(str(obj_j['role']))
+                        a_role = await trad_role(str(obj_i['role']))
                         n_role = ""
-                        n_role = await trad_role(str(obj_i['role']))
+                        n_role = await trad_role(str(obj_j['role']))
                         await channel.send("Changement de rôle : "+str(obj_i['name'])+" | "+a_role+" -> "+n_role)
 
         else:

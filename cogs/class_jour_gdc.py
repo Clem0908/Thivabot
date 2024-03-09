@@ -46,9 +46,8 @@ class Classjourgdc(commands.Cog):
                 string = string + str(listeJoueurs[i]) + "\n"
 
             string = string + "```"
-            if len(string) >= 1999:
-                await ctx.send("Trop de participants ce mois-ci pour que je puisse afficher")
-            await ctx.send(string)
+            if len(string) <= 1999:
+                await ctx.send(string)
             
             await ctx.send("TOP 20:")
             string = "```"

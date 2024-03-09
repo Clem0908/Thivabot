@@ -10,7 +10,7 @@ class EnvoyerAmour(commands.Cog):
     @commands.has_permissions(administrator=True)
     async def envoyer_amour(self,ctx):
 
-        await ctx.send("<:heal_spirit_love:966416132733009981>")
+        await ctx.send(HEAL_SPIRIT_LOVE)
         await ctx.send("<@684095550496309252>")
         await ctx.send("Je t'aime :heart:")
 

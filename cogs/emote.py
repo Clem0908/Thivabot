@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from constants import *
 
 class Emote(commands.Cog):
 
@@ -47,7 +48,7 @@ class Emote(commands.Cog):
 
         else:
 
-            await ctx.send("J'ai besoin qu'on me précise quelle emote envoyer <:king_cry:966424394681425990>")
+            await ctx.send("J'ai besoin qu'on me précise quelle emote envoyer "+KING_CRY)
             await ctx.send("```Emotes disponibles :\namour\ncochonne\ndab\nforce\ngolem_casse\nouaiiis\nprince_pleure\nprincesse_yeah\nreine```")
 
 async def setup(bot):
