@@ -87,7 +87,7 @@ class Coffres_texte(commands.Cog):
 
                 if obj_i['name'] == "Tower Troop Chest":
 
-                    string_answer += str(str(obj_i['index'])+" | 0h | Coffre de Tour\n")
+                    string_answer += str(str(obj_i['index'])+" | 0h | Coffre de Troupes de Tour\n")
 
             await ctx.send(string_answer)
             await ctx.send("J'ai terminé de lister les coffres de : **"+str(data1['name'])+"**")

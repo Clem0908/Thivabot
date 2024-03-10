@@ -130,7 +130,7 @@ class Coffres(commands.Cog):
 
                 if obj_i['name'] == "Tower Troop Chest":
 
-                    await ctx.send(str(obj_i['index'])+" | 0h | Coffre de Tour")
+                    await ctx.send(str(obj_i['index'])+" | 0h | Coffre de Troupes de Tour")
                     f = open("./chests/Tower_Troop_Chest.png","rb")
                     df = discord.File(fp = f)
                     await ctx.send(file = df)
