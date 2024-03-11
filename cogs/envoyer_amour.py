@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from constants import *
 
 class EnvoyerAmour(commands.Cog):
 
