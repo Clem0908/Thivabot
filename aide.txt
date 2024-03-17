@@ -16,6 +16,8 @@
 -> Affiche date et heure de connexion d'un joueur
 **emote [nom]**
 -> Thivabot envoie l'emote demandée en GIF
+**get_hgdc**
+-> Donne l'heure UTC du début de la guerre
 **igdc**
 -> Affiche le nombre de participants journalier
 **ij [ID]**

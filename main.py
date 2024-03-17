@@ -75,6 +75,7 @@ async def main():
         await bot.load_extension("cogs.hgdc")
         await bot.load_extension("cogs.class_jour_gdc")
         await bot.load_extension("cogs.coffres_texte")
+        await bot.load_extension("cogs.get_hgdc")
 
         await bot.start(BOTTOKEN)
 
