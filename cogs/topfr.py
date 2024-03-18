@@ -46,11 +46,11 @@ class Topfr(commands.Cog):
                         await ctx.send("Ancien rang = **"+str(obj_i['previousRank'])+"** -> nouveau rang = **"+str(obj_i['rank'])+"**")
                         return
 
-                else:
-                    channel = self.bot.get_channel(DEBUG_CHAN)
-                    await channel.send("[!T topfr] Erreur requête : "+str(r1.status_code))
+            else:
+                channel = self.bot.get_channel(DEBUG_CHAN)
+                await channel.send("[!T topfr] Erreur requête : "+str(r1.status_code))
 
-                    return
+                return
 
         else:
 
