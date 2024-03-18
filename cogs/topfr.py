@@ -25,9 +25,9 @@ class Topfr(commands.Cog):
             if r1.status_code == 200:
 
                 data = r.json()
+                print(str(data))
                 data1 = r1.json()
                 await ctx.send("Trophées du clan : "+ str(data1['clanWarTrophies']))
-                await ctx.send("Classement local FR du clan :")
 
                 for i in range(0,len(data['items'])):
 
@@ -35,6 +35,7 @@ class Topfr(commands.Cog):
 
                     if obj_i['tag'] == "#LPRYYG":
 
+                        await ctx.send("Classement top 1000 France du clan :")
                         if obj_i['previousRank'] < obj_i['rank']:
                         
                             await ctx.send("Le clan a perdu en rang "+KING_CRY)
