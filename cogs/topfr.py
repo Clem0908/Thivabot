@@ -17,11 +17,11 @@ class Topfr(commands.Cog):
         id_c = "LPRYYG"
         PARAMS = {'Authorization': 'Bearer '+APICRTOKEN}
         r = requests.get(url = APICRURL+"/locations/57000087/rankings/clanwars", auth=None, params = PARAMS)
-    
+        
         if r.status_code == 200:
 
             r1 = requests.get(url = APICRURL+"/clans/%23"+id_c, auth=None, params = PARAMS)
-
+            
             if r1.status_code == 200:
 
                 data = r.json()
@@ -48,14 +48,14 @@ class Topfr(commands.Cog):
 
                 else:
                     channel = self.bot.get_channel(DEBUG_CHAN)
-                    await channel.send("[!T topfr] Erreur requête/API")
+                    await channel.send("[!T topfr] Erreur requête : "+str(r1.status_code))
 
                     return
 
         else:
 
             channel = self.bot.get_channel(DEBUG_CHAN)
-            await channel.send("[!T topfr] Erreur requête/API")
+            await channel.send("[!T topfr] Erreur requête : "+str(r.status_code))
 
             return
 

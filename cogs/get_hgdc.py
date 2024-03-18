@@ -18,7 +18,7 @@ class Get_hgdc(commands.Cog):
         id_c = "LPRYYG"
         PARAMS = {'Authorization': 'Bearer '+APICRTOKEN}
         r = requests.get(url = APICRURL+"/clans/%23"+id_c+"/riverracelog?limit=1", auth=None, params = PARAMS)
-        
+
         if r.status_code == 200:
 
             data = r.json()
@@ -38,7 +38,7 @@ class Get_hgdc(commands.Cog):
         else:
 
             channel = self.bot.get_channel(DEBUG_CHAN)
-            await channel.send("[!T get_hgdc] Erreur requête")
+            await channel.send("[!T get_hgdc] Erreur requête : "+str(r.status_code))
             return
 
 async def setup(bot):
