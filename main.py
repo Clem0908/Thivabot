@@ -159,6 +159,17 @@ async def gdc(channel_id, message):
 
 scheduler.add_job(gdc,'cron',day_of_week='mon',hour=8,minute=0,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"4 va se terminer\n"+GDC_MENTION],misfire_grace_time=180)
 scheduler.add_job(gdc,'cron',day_of_week='mon',hour=HEURE,minute=MINUTE,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"4 va se terminer\n"+GDC_MENTION],misfire_grace_time=180)
+
+async def autoclass_jour_gdc(channel_id):
+    
+    channel = bot.get_channel(channel_id)
+
+    command = bot.get_command("class_jour_gdc")
+    await command(channel)
+
+# class_jour_gdc au dernier jour
+scheduler.add_job(autoclass_jour_gdc,'cron',day_of_week='mon',hour=HEURE,minute=MINUTE,args=[TOP20_CHAN],misfire_grace_time=180)
+
 scheduler.add_job(gdc,'cron',day_of_week='thu',hour=HEURE,minute=MINUTE,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"1 vient de débuter\n"+GDC_MENTION],misfire_grace_time=180)
 scheduler.add_job(gdc,'cron',day_of_week='thu',hour=20,minute=0,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"1 est en cours\n"+GDC_MENTION],misfire_grace_time=180)
 scheduler.add_job(gdc,'cron',day_of_week='fri',hour=8,minute=0,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"1 va se terminer\n"+GDC_MENTION],misfire_grace_time=180)

@@ -44,10 +44,14 @@ class Classjourgdc(commands.Cog):
             for i in range(0,len(listeJoueurs)):
 
                 string = string + str(listeJoueurs[i]) + "\n"
+                if len(string) > 1000:
+                    string = string + "```"
+                    await ctx.send(string)
+                    string = ""
+                    string = "```"
 
             string = string + "```"
-            if len(string) <= 1999:
-                await ctx.send(string)
+            await ctx.send(string)
             
             await ctx.send("TOP 20:")
             string = "```"
@@ -58,6 +62,12 @@ class Classjourgdc(commands.Cog):
 
             string = string + "```"
             await ctx.send(string)
+
+        elif r.status_code == 503:
+
+            channel = self.bot.get_channel(DEBUG_CHAN)
+            await channel.send("[!T class_jour_gdc] Erreur 503 : service indisponible")
+            return
 
         else:
 
