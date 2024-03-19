@@ -55,7 +55,7 @@ class Coffres_texte(commands.Cog):
 
                 if obj_i['name'] == "Overflowing Gold Crate":
                     
-                    string_answer += str(str(obj_i['index'])+" | 12h | Cage d'Or Énorme\n")
+                    string_answer += str(str(obj_i['index'])+" | 12h | Cage d'Or Pleine\n")
 
                 if obj_i['name'] == "Plentiful Gold Crate":
                     

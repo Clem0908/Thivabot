@@ -4,7 +4,7 @@
     "type": "open",
     "description": "Clan FR axé GDC : 4 combats/jour ⚔️ - Présentation obligatoire 💬 - Discord actif 🎮 - code: RoyaleAPI ✨",
     "badgeId": 16000078,
-    "clanScore": 76031,
+    "clanScore": 76967,
     "clanWarTrophies": 3595,
     "location": {
         "id": 57000087,
@@ -13,17 +13,17 @@
         "countryCode": "FR"
     },
     "requiredTrophies": 6000,
-    "donationsPerWeek": 368,
+    "donationsPerWeek": 1478,
     "clanChestStatus": "inactive",
     "clanChestLevel": 1,
     "clanChestMaxLevel": 0,
-    "members": 46,
+    "members": 50,
     "memberList": [
         {
-            "tag": "#29YVVJ29J",
-            "name": "binouse",
+            "tag": "#PU2L0LPY",
+            "name": "HoodZY",
             "role": "elder",
-            "lastSeen": "20240318T100945.000Z",
+            "lastSeen": "20240319T132908.000Z",
             "expLevel": 59,
             "trophies": 9000,
             "arena": {
@@ -32,15 +32,15 @@
             },
             "clanRank": 1,
             "previousClanRank": 1,
-            "donations": 28,
+            "donations": 142,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
         {
-            "tag": "#PU2L0LPY",
-            "name": "HoodZY",
+            "tag": "#29YVVJ29J",
+            "name": "binouse",
             "role": "elder",
-            "lastSeen": "20240318T100433.000Z",
+            "lastSeen": "20240319T081211.000Z",
             "expLevel": 59,
             "trophies": 9000,
             "arena": {
@@ -49,7 +49,7 @@
             },
             "clanRank": 2,
             "previousClanRank": 2,
-            "donations": 18,
+            "donations": 68,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -57,16 +57,16 @@
             "tag": "#20VPGYG82",
             "name": "Flic",
             "role": "elder",
-            "lastSeen": "20240317T163901.000Z",
+            "lastSeen": "20240319T113911.000Z",
             "expLevel": 58,
-            "trophies": 8648,
+            "trophies": 8653,
             "arena": {
                 "id": 54000019,
                 "name": "Arena 22"
             },
             "clanRank": 3,
             "previousClanRank": 3,
-            "donations": 0,
+            "donations": 8,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -74,16 +74,16 @@
             "tag": "#29RLC88GP",
             "name": "Hardcorpse",
             "role": "elder",
-            "lastSeen": "20240317T192425.000Z",
+            "lastSeen": "20240319T143341.000Z",
             "expLevel": 58,
-            "trophies": 8318,
+            "trophies": 8311,
             "arena": {
                 "id": 54000018,
                 "name": "Arena 21"
             },
             "clanRank": 4,
             "previousClanRank": 4,
-            "donations": 0,
+            "donations": 52,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -91,16 +91,16 @@
             "tag": "#VUPVGCQ",
             "name": "jess",
             "role": "leader",
-            "lastSeen": "20240317T215427.000Z",
+            "lastSeen": "20240319T140959.000Z",
             "expLevel": 57,
-            "trophies": 8083,
+            "trophies": 8166,
             "arena": {
                 "id": 54000018,
                 "name": "Arena 21"
             },
             "clanRank": 5,
             "previousClanRank": 5,
-            "donations": 0,
+            "donations": 26,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -108,9 +108,9 @@
             "tag": "#RU8CLUV",
             "name": "c'est bastien",
             "role": "coLeader",
-            "lastSeen": "20240318T061214.000Z",
+            "lastSeen": "20240319T165524.000Z",
             "expLevel": 55,
-            "trophies": 8060,
+            "trophies": 8092,
             "arena": {
                 "id": 54000018,
                 "name": "Arena 21"
@@ -125,16 +125,16 @@
             "tag": "#8GVLRJQJ0",
             "name": "jerome",
             "role": "coLeader",
-            "lastSeen": "20240318T065812.000Z",
+            "lastSeen": "20240319T060215.000Z",
             "expLevel": 58,
-            "trophies": 7900,
+            "trophies": 7952,
             "arena": {
                 "id": 54000017,
                 "name": "Arena 20"
             },
             "clanRank": 7,
             "previousClanRank": 7,
-            "donations": 10,
+            "donations": 84,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -142,7 +142,7 @@
             "tag": "#QLQ8GQR82",
             "name": "aa",
             "role": "coLeader",
-            "lastSeen": "20240317T130516.000Z",
+            "lastSeen": "20240319T161238.000Z",
             "expLevel": 52,
             "trophies": 7898,
             "arena": {
@@ -159,7 +159,7 @@
             "tag": "#28RGRUPJL",
             "name": "kataa",
             "role": "elder",
-            "lastSeen": "20240318T100353.000Z",
+            "lastSeen": "20240319T114434.000Z",
             "expLevel": 53,
             "trophies": 7775,
             "arena": {
@@ -168,7 +168,7 @@
             },
             "clanRank": 9,
             "previousClanRank": 9,
-            "donations": 0,
+            "donations": 10,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -176,7 +176,7 @@
             "tag": "#2R09JGC9G",
             "name": "yoda",
             "role": "coLeader",
-            "lastSeen": "20240318T054220.000Z",
+            "lastSeen": "20240319T115552.000Z",
             "expLevel": 60,
             "trophies": 7750,
             "arena": {
@@ -185,7 +185,7 @@
             },
             "clanRank": 10,
             "previousClanRank": 10,
-            "donations": 0,
+            "donations": 10,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -193,7 +193,7 @@
             "tag": "#GY0C22L",
             "name": "KarimCMonCopain",
             "role": "elder",
-            "lastSeen": "20240317T214356.000Z",
+            "lastSeen": "20240319T123718.000Z",
             "expLevel": 52,
             "trophies": 7672,
             "arena": {
@@ -201,16 +201,16 @@
                 "name": "Arena 20"
             },
             "clanRank": 11,
-            "previousClanRank": 12,
-            "donations": 0,
-            "donationsReceived": 0,
+            "previousClanRank": 11,
+            "donations": 8,
+            "donationsReceived": 80,
             "clanChestPoints": 0
         },
         {
             "tag": "#RRP2LVR8",
             "name": "ERIC",
             "role": "coLeader",
-            "lastSeen": "20240317T210219.000Z",
+            "lastSeen": "20240318T203021.000Z",
             "expLevel": 55,
             "trophies": 7667,
             "arena": {
@@ -218,42 +218,25 @@
                 "name": "Arena 20"
             },
             "clanRank": 12,
-            "previousClanRank": 13,
+            "previousClanRank": 12,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
         {
-            "tag": "#20UCRCLL0",
-            "name": "⚡️CALZORS⚡️",
-            "role": "elder",
-            "lastSeen": "20240318T102528.000Z",
-            "expLevel": 56,
-            "trophies": 7591,
+            "tag": "#8UCLCC9Y8",
+            "name": "Jihelair",
+            "role": "coLeader",
+            "lastSeen": "20240319T034322.000Z",
+            "expLevel": 57,
+            "trophies": 7560,
             "arena": {
                 "id": 54000017,
                 "name": "Arena 20"
             },
             "clanRank": 13,
-            "previousClanRank": 16,
-            "donations": 0,
-            "donationsReceived": 0,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#LQPUJGV0",
-            "name": "gio62",
-            "role": "elder",
-            "lastSeen": "20240318T035020.000Z",
-            "expLevel": 54,
-            "trophies": 7559,
-            "arena": {
-                "id": 54000017,
-                "name": "Arena 20"
-            },
-            "clanRank": 14,
-            "previousClanRank": 17,
-            "donations": 10,
+            "previousClanRank": 13,
+            "donations": 28,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -268,17 +251,34 @@
                 "id": 54000017,
                 "name": "Arena 20"
             },
-            "clanRank": 15,
-            "previousClanRank": 18,
+            "clanRank": 14,
+            "previousClanRank": 14,
             "donations": 0,
             "donationsReceived": 40,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#20UCRCLL0",
+            "name": "⚡️CALZORS⚡️",
+            "role": "elder",
+            "lastSeen": "20240319T132342.000Z",
+            "expLevel": 56,
+            "trophies": 7535,
+            "arena": {
+                "id": 54000017,
+                "name": "Arena 20"
+            },
+            "clanRank": 15,
+            "previousClanRank": 15,
+            "donations": 30,
+            "donationsReceived": 0,
             "clanChestPoints": 0
         },
         {
             "tag": "#L0QUUYVU",
             "name": "frazir",
             "role": "elder",
-            "lastSeen": "20240317T224803.000Z",
+            "lastSeen": "20240319T170815.000Z",
             "expLevel": 55,
             "trophies": 7533,
             "arena": {
@@ -286,25 +286,25 @@
                 "name": "Arena 20"
             },
             "clanRank": 16,
-            "previousClanRank": 19,
-            "donations": 0,
+            "previousClanRank": 16,
+            "donations": 30,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
         {
-            "tag": "#8UCLCC9Y8",
-            "name": "Jihelair",
-            "role": "coLeader",
-            "lastSeen": "20240318T061257.000Z",
-            "expLevel": 57,
-            "trophies": 7530,
+            "tag": "#LQPUJGV0",
+            "name": "gio62",
+            "role": "elder",
+            "lastSeen": "20240319T111327.000Z",
+            "expLevel": 54,
+            "trophies": 7531,
             "arena": {
                 "id": 54000017,
                 "name": "Arena 20"
             },
             "clanRank": 17,
-            "previousClanRank": 20,
-            "donations": 18,
+            "previousClanRank": 17,
+            "donations": 20,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -312,7 +312,7 @@
             "tag": "#8GU8Q08LV",
             "name": "KELY DU 68",
             "role": "elder",
-            "lastSeen": "20240318T102550.000Z",
+            "lastSeen": "20240319T165602.000Z",
             "expLevel": 55,
             "trophies": 7335,
             "arena": {
@@ -320,8 +320,8 @@
                 "name": "Arena 19"
             },
             "clanRank": 18,
-            "previousClanRank": 21,
-            "donations": 38,
+            "previousClanRank": 18,
+            "donations": 122,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -329,7 +329,7 @@
             "tag": "#9PP0UQC",
             "name": "malo",
             "role": "elder",
-            "lastSeen": "20240317T165756.000Z",
+            "lastSeen": "20240318T185634.000Z",
             "expLevel": 56,
             "trophies": 7282,
             "arena": {
@@ -337,7 +337,7 @@
                 "name": "Arena 19"
             },
             "clanRank": 19,
-            "previousClanRank": 22,
+            "previousClanRank": 19,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -346,16 +346,33 @@
             "tag": "#GGPJ0CJQ",
             "name": "aure5662",
             "role": "coLeader",
-            "lastSeen": "20240318T100355.000Z",
-            "expLevel": 50,
+            "lastSeen": "20240319T133324.000Z",
+            "expLevel": 51,
             "trophies": 7276,
             "arena": {
                 "id": 54000016,
                 "name": "Arena 19"
             },
             "clanRank": 20,
-            "previousClanRank": 23,
-            "donations": 38,
+            "previousClanRank": 20,
+            "donations": 112,
+            "donationsReceived": 160,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#2RQY9R89G",
+            "name": "Choc-Norris",
+            "role": "elder",
+            "lastSeen": "20240319T140725.000Z",
+            "expLevel": 51,
+            "trophies": 7246,
+            "arena": {
+                "id": 54000016,
+                "name": "Arena 19"
+            },
+            "clanRank": 21,
+            "previousClanRank": 21,
+            "donations": 26,
             "donationsReceived": 40,
             "clanChestPoints": 0
         },
@@ -363,83 +380,49 @@
             "tag": "#YGP8029U",
             "name": "Clic 40",
             "role": "elder",
-            "lastSeen": "20240318T070859.000Z",
+            "lastSeen": "20240319T164621.000Z",
             "expLevel": 53,
             "trophies": 7245,
             "arena": {
                 "id": 54000016,
                 "name": "Arena 19"
             },
-            "clanRank": 21,
-            "previousClanRank": 24,
-            "donations": 10,
-            "donationsReceived": 0,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#2RQY9R89G",
-            "name": "Choc-Norris",
-            "role": "elder",
-            "lastSeen": "20240318T042335.000Z",
-            "expLevel": 50,
-            "trophies": 7214,
-            "arena": {
-                "id": 54000016,
-                "name": "Arena 19"
-            },
             "clanRank": 22,
-            "previousClanRank": 25,
-            "donations": 0,
-            "donationsReceived": 0,
+            "previousClanRank": 22,
+            "donations": 58,
+            "donationsReceived": 40,
             "clanChestPoints": 0
         },
         {
             "tag": "#QLUCQY2JU",
             "name": "mathias",
             "role": "member",
-            "lastSeen": "20240315T092412.000Z",
+            "lastSeen": "20240319T161505.000Z",
             "expLevel": 41,
-            "trophies": 7206,
+            "trophies": 7177,
             "arena": {
                 "id": 54000016,
                 "name": "Arena 19"
             },
             "clanRank": 23,
-            "previousClanRank": 26,
-            "donations": 0,
-            "donationsReceived": 0,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#9GVGL8R8C",
-            "name": "lapin62",
-            "role": "member",
-            "lastSeen": "20240318T100203.000Z",
-            "expLevel": 52,
-            "trophies": 7136,
-            "arena": {
-                "id": 54000016,
-                "name": "Arena 19"
-            },
-            "clanRank": 24,
-            "previousClanRank": 28,
-            "donations": 18,
-            "donationsReceived": 0,
+            "previousClanRank": 23,
+            "donations": 10,
+            "donationsReceived": 40,
             "clanChestPoints": 0
         },
         {
             "tag": "#U9P2J9Y9L",
             "name": "''",
             "role": "member",
-            "lastSeen": "20240317T182713.000Z",
+            "lastSeen": "20240318T211555.000Z",
             "expLevel": 37,
             "trophies": 7113,
             "arena": {
                 "id": 54000016,
                 "name": "Arena 19"
             },
-            "clanRank": 25,
-            "previousClanRank": 27,
+            "clanRank": 24,
+            "previousClanRank": 24,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -448,15 +431,15 @@
             "tag": "#P8PYGLY",
             "name": "Alboz",
             "role": "elder",
-            "lastSeen": "20240318T041827.000Z",
-            "expLevel": 52,
+            "lastSeen": "20240319T170535.000Z",
+            "expLevel": 53,
             "trophies": 7100,
             "arena": {
                 "id": 54000016,
                 "name": "Arena 19"
             },
-            "clanRank": 26,
-            "previousClanRank": 29,
+            "clanRank": 25,
+            "previousClanRank": 25,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -465,16 +448,33 @@
             "tag": "#LYYGQVRCQ",
             "name": "lastara",
             "role": "elder",
-            "lastSeen": "20240318T072325.000Z",
+            "lastSeen": "20240319T170141.000Z",
             "expLevel": 44,
             "trophies": 7060,
             "arena": {
                 "id": 54000016,
                 "name": "Arena 19"
             },
+            "clanRank": 26,
+            "previousClanRank": 27,
+            "donations": 28,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#9GVGL8R8C",
+            "name": "lapin62",
+            "role": "member",
+            "lastSeen": "20240319T131713.000Z",
+            "expLevel": 52,
+            "trophies": 7045,
+            "arena": {
+                "id": 54000016,
+                "name": "Arena 19"
+            },
             "clanRank": 27,
-            "previousClanRank": 30,
-            "donations": 10,
+            "previousClanRank": 26,
+            "donations": 68,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -482,7 +482,7 @@
             "tag": "#Q0GJLC9UU",
             "name": "A2L.92",
             "role": "elder",
-            "lastSeen": "20240317T223721.000Z",
+            "lastSeen": "20240319T173916.000Z",
             "expLevel": 52,
             "trophies": 7034,
             "arena": {
@@ -490,26 +490,43 @@
                 "name": "Arena 19"
             },
             "clanRank": 28,
-            "previousClanRank": 31,
-            "donations": 0,
+            "previousClanRank": 28,
+            "donations": 10,
             "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#9VGLGVUY8",
+            "name": "sbxr",
+            "role": "member",
+            "lastSeen": "20240319T170722.000Z",
+            "expLevel": 39,
+            "trophies": 7022,
+            "arena": {
+                "id": 54000016,
+                "name": "Arena 19"
+            },
+            "clanRank": 29,
+            "previousClanRank": 0,
+            "donations": 0,
+            "donationsReceived": 30,
             "clanChestPoints": 0
         },
         {
             "tag": "#LU9PYGQGJ",
             "name": "Thiva",
             "role": "elder",
-            "lastSeen": "20240318T062832.000Z",
+            "lastSeen": "20240319T173157.000Z",
             "expLevel": 50,
             "trophies": 6896,
             "arena": {
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 29,
-            "previousClanRank": 32,
-            "donations": 28,
-            "donationsReceived": 40,
+            "clanRank": 30,
+            "previousClanRank": 29,
+            "donations": 164,
+            "donationsReceived": 160,
             "clanChestPoints": 0
         },
         {
@@ -523,9 +540,43 @@
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 30,
-            "previousClanRank": 33,
+            "clanRank": 31,
+            "previousClanRank": 30,
             "donations": 0,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#UQR8P9JJ0",
+            "name": "Erinous",
+            "role": "elder",
+            "lastSeen": "20240319T144529.000Z",
+            "expLevel": 42,
+            "trophies": 6752,
+            "arena": {
+                "id": 54000015,
+                "name": "Arena 18"
+            },
+            "clanRank": 32,
+            "previousClanRank": 35,
+            "donations": 30,
+            "donationsReceived": 128,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#PPQ8JRUY",
+            "name": "micke",
+            "role": "coLeader",
+            "lastSeen": "20240318T185849.000Z",
+            "expLevel": 54,
+            "trophies": 6752,
+            "arena": {
+                "id": 54000015,
+                "name": "Arena 18"
+            },
+            "clanRank": 33,
+            "previousClanRank": 31,
+            "donations": 28,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -533,15 +584,15 @@
             "tag": "#2LP9GL80C",
             "name": "dayane",
             "role": "elder",
-            "lastSeen": "20240317T143000.000Z",
+            "lastSeen": "20240318T194521.000Z",
             "expLevel": 53,
             "trophies": 6738,
             "arena": {
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 31,
-            "previousClanRank": 35,
+            "clanRank": 34,
+            "previousClanRank": 32,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -550,33 +601,16 @@
             "tag": "#QURVGUG8V",
             "name": "corentin",
             "role": "elder",
-            "lastSeen": "20240318T055434.000Z",
-            "expLevel": 37,
+            "lastSeen": "20240318T203156.000Z",
+            "expLevel": 38,
             "trophies": 6727,
             "arena": {
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 32,
-            "previousClanRank": 36,
-            "donations": 28,
-            "donationsReceived": 0,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#PPQ8JRUY",
-            "name": "micke",
-            "role": "coLeader",
-            "lastSeen": "20240318T083639.000Z",
-            "expLevel": 54,
-            "trophies": 6726,
-            "arena": {
-                "id": 54000015,
-                "name": "Arena 18"
-            },
-            "clanRank": 33,
-            "previousClanRank": 37,
-            "donations": 28,
+            "clanRank": 35,
+            "previousClanRank": 33,
+            "donations": 44,
             "donationsReceived": 0,
             "clanChestPoints": 0
         },
@@ -584,49 +618,32 @@
             "tag": "#2LYUYJ8LJ",
             "name": "BIG BOSS",
             "role": "member",
-            "lastSeen": "20240318T062333.000Z",
+            "lastSeen": "20240318T184304.000Z",
             "expLevel": 52,
-            "trophies": 6724,
+            "trophies": 6723,
             "arena": {
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 34,
+            "clanRank": 36,
             "previousClanRank": 34,
-            "donations": 8,
-            "donationsReceived": 40,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#UQR8P9JJ0",
-            "name": "Erinous",
-            "role": "elder",
-            "lastSeen": "20240318T055127.000Z",
-            "expLevel": 42,
-            "trophies": 6667,
-            "arena": {
-                "id": 54000015,
-                "name": "Arena 18"
-            },
-            "clanRank": 35,
-            "previousClanRank": 38,
-            "donations": 20,
-            "donationsReceived": 48,
+            "donations": 54,
+            "donationsReceived": 80,
             "clanChestPoints": 0
         },
         {
             "tag": "#9CP2QG2Q",
             "name": "dreadsxav",
             "role": "elder",
-            "lastSeen": "20240317T210102.000Z",
-            "expLevel": 48,
+            "lastSeen": "20240319T111713.000Z",
+            "expLevel": 49,
             "trophies": 6638,
             "arena": {
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 36,
-            "previousClanRank": 39,
+            "clanRank": 37,
+            "previousClanRank": 36,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -635,15 +652,32 @@
             "tag": "#82UVPQ8G0",
             "name": "⚡️tonio⚡️",
             "role": "coLeader",
-            "lastSeen": "20240318T074327.000Z",
+            "lastSeen": "20240319T074024.000Z",
             "expLevel": 50,
-            "trophies": 6508,
+            "trophies": 6596,
             "arena": {
                 "id": 54000015,
                 "name": "Arena 18"
             },
-            "clanRank": 37,
-            "previousClanRank": 42,
+            "clanRank": 38,
+            "previousClanRank": 37,
+            "donations": 0,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#Y900LY0VG",
+            "name": "philopouette",
+            "role": "member",
+            "lastSeen": "20240319T112526.000Z",
+            "expLevel": 39,
+            "trophies": 6500,
+            "arena": {
+                "id": 54000015,
+                "name": "Arena 18"
+            },
+            "clanRank": 39,
+            "previousClanRank": 0,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -652,60 +686,26 @@
             "tag": "#RCU900JYG",
             "name": "Nabooris",
             "role": "elder",
-            "lastSeen": "20240318T081742.000Z",
+            "lastSeen": "20240319T152815.000Z",
             "expLevel": 39,
             "trophies": 6456,
             "arena": {
                 "id": 54000014,
                 "name": "Arena 17"
             },
-            "clanRank": 38,
-            "previousClanRank": 43,
-            "donations": 0,
-            "donationsReceived": 0,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#YJRCYUG82",
-            "name": "yllaven",
-            "role": "member",
-            "lastSeen": "20240317T214023.000Z",
-            "expLevel": 38,
-            "trophies": 6245,
-            "arena": {
-                "id": 54000014,
-                "name": "Arena 17"
-            },
-            "clanRank": 39,
-            "previousClanRank": 44,
-            "donations": 0,
-            "donationsReceived": 0,
-            "clanChestPoints": 0
-        },
-        {
-            "tag": "#9YC2890Y",
-            "name": "Team MSC",
-            "role": "member",
-            "lastSeen": "20240318T075548.000Z",
-            "expLevel": 44,
-            "trophies": 6243,
-            "arena": {
-                "id": 54000014,
-                "name": "Arena 17"
-            },
             "clanRank": 40,
-            "previousClanRank": 45,
+            "previousClanRank": 38,
             "donations": 0,
-            "donationsReceived": 40,
+            "donationsReceived": 120,
             "clanChestPoints": 0
         },
         {
-            "tag": "#LYPL0R9UY",
-            "name": "oussama",
+            "tag": "#2RUQYUGLU",
+            "name": "tamerelatimpe",
             "role": "member",
-            "lastSeen": "20240318T035138.000Z",
-            "expLevel": 39,
-            "trophies": 6137,
+            "lastSeen": "20240319T174219.000Z",
+            "expLevel": 40,
+            "trophies": 6257,
             "arena": {
                 "id": 54000014,
                 "name": "Arena 17"
@@ -717,18 +717,86 @@
             "clanChestPoints": 0
         },
         {
+            "tag": "#LYPL0R9UY",
+            "name": "oussama",
+            "role": "member",
+            "lastSeen": "20240319T174318.000Z",
+            "expLevel": 39,
+            "trophies": 6254,
+            "arena": {
+                "id": 54000014,
+                "name": "Arena 17"
+            },
+            "clanRank": 42,
+            "previousClanRank": 39,
+            "donations": 20,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#YJRCYUG82",
+            "name": "yllaven",
+            "role": "member",
+            "lastSeen": "20240319T091312.000Z",
+            "expLevel": 38,
+            "trophies": 6245,
+            "arena": {
+                "id": 54000014,
+                "name": "Arena 17"
+            },
+            "clanRank": 43,
+            "previousClanRank": 41,
+            "donations": 0,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#9YC2890Y",
+            "name": "Team MSC",
+            "role": "member",
+            "lastSeen": "20240319T064135.000Z",
+            "expLevel": 44,
+            "trophies": 6243,
+            "arena": {
+                "id": 54000014,
+                "name": "Arena 17"
+            },
+            "clanRank": 44,
+            "previousClanRank": 42,
+            "donations": 0,
+            "donationsReceived": 80,
+            "clanChestPoints": 0
+        },
+        {
+            "tag": "#JJQ9GCRQC",
+            "name": "CHYU",
+            "role": "member",
+            "lastSeen": "20240319T133559.000Z",
+            "expLevel": 34,
+            "trophies": 6154,
+            "arena": {
+                "id": 54000014,
+                "name": "Arena 17"
+            },
+            "clanRank": 45,
+            "previousClanRank": 0,
+            "donations": 0,
+            "donationsReceived": 0,
+            "clanChestPoints": 0
+        },
+        {
             "tag": "#G29JQR2RQ",
             "name": "PasDeLove",
             "role": "member",
-            "lastSeen": "20240317T170545.000Z",
+            "lastSeen": "20240319T170259.000Z",
             "expLevel": 41,
             "trophies": 6070,
             "arena": {
                 "id": 54000014,
                 "name": "Arena 17"
             },
-            "clanRank": 42,
-            "previousClanRank": 0,
+            "clanRank": 46,
+            "previousClanRank": 43,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -737,32 +805,32 @@
             "tag": "#28LC0U2JC",
             "name": "Darkmix",
             "role": "member",
-            "lastSeen": "20240318T090721.000Z",
+            "lastSeen": "20240319T125816.000Z",
             "expLevel": 49,
             "trophies": 5836,
             "arena": {
                 "id": 54000013,
                 "name": "Arena 16"
             },
-            "clanRank": 43,
-            "previousClanRank": 46,
-            "donations": 10,
-            "donationsReceived": 40,
+            "clanRank": 47,
+            "previousClanRank": 44,
+            "donations": 48,
+            "donationsReceived": 160,
             "clanChestPoints": 0
         },
         {
             "tag": "#C2YQY899P",
             "name": "manon",
             "role": "elder",
-            "lastSeen": "20240318T055812.000Z",
+            "lastSeen": "20240319T172041.000Z",
             "expLevel": 41,
-            "trophies": 5800,
+            "trophies": 5821,
             "arena": {
                 "id": 54000013,
                 "name": "Arena 16"
             },
-            "clanRank": 44,
-            "previousClanRank": 47,
+            "clanRank": 48,
+            "previousClanRank": 45,
             "donations": 0,
             "donationsReceived": 0,
             "clanChestPoints": 0
@@ -771,34 +839,34 @@
             "tag": "#2C9GC80VQ",
             "name": "MrWolfy",
             "role": "coLeader",
-            "lastSeen": "20240318T100237.000Z",
+            "lastSeen": "20240319T165604.000Z",
             "expLevel": 40,
             "trophies": 5508,
             "arena": {
                 "id": 54000013,
                 "name": "Arena 16"
             },
-            "clanRank": 45,
-            "previousClanRank": 48,
-            "donations": 38,
-            "donationsReceived": 40,
+            "clanRank": 49,
+            "previousClanRank": 46,
+            "donations": 92,
+            "donationsReceived": 200,
             "clanChestPoints": 0
         },
         {
             "tag": "#V2VY2QCRP",
             "name": "Gasparcho",
             "role": "elder",
-            "lastSeen": "20240317T205938.000Z",
+            "lastSeen": "20240319T134259.000Z",
             "expLevel": 39,
             "trophies": 4711,
             "arena": {
                 "id": 54000056,
                 "name": "Arena 14"
             },
-            "clanRank": 46,
-            "previousClanRank": 49,
-            "donations": 0,
-            "donationsReceived": 0,
+            "clanRank": 50,
+            "previousClanRank": 47,
+            "donations": 10,
+            "donationsReceived": 40,
             "clanChestPoints": 0
         }
     ]
