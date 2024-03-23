@@ -19,7 +19,7 @@ class Ij(commands.Cog):
         id_j = id_j.upper()
 
         if len(id_j) > 10:
-            await ctx.send("L'ID du joueur entré est trop long :cry:")
+            await ctx.send("Ce tag de joueur est trop long "+KING_CRY)
             return
 
         PARAMS = {'Authorization': 'Bearer '+APICRTOKEN} 

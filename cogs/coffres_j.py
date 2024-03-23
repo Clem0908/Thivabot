@@ -15,9 +15,10 @@ class Coffres_j(commands.Cog):
     async def coffres_j(self,ctx,id_j: str):
 
         id_j = id_j.lstrip("#")  
+        id_j = id_j.upper()
 
-        if len(id_j) > 9:
-            await ctx.send("Ce tag de joueur est trop long")
+        if len(id_j) > 10:
+            await ctx.send("Ce tag de joueur est trop long "+KING_CRY)
             return
 
         APICRTOKEN = tokens.getApiCrToken()

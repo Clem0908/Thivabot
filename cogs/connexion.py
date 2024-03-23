@@ -50,6 +50,11 @@ class Connexion(commands.Cog):
         
         APICRTOKEN = tokens.getApiCrToken()
         id_j = id_j.lstrip('#')
+        id_j = id_j.upper()
+        if len(id_j) > 10:
+            await ctx.send("Ce tag de joueur est trop long "+KING_CRY)
+            return
+
         id_c = "LPRYYG"
         PARAMS = {'Authorization': 'Bearer '+APICRTOKEN} 
         r = requests.get(url = APICRURL+"/clans/%23"+id_c, auth=None, params = PARAMS)

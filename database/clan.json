@@ -13,7 +13,7 @@
         "countryCode": "FR"
     },
     "requiredTrophies": 6000,
-    "donationsPerWeek": 5640,
+    "donationsPerWeek": 5648,
     "clanChestStatus": "inactive",
     "clanChestLevel": 1,
     "clanChestMaxLevel": 0,
@@ -227,7 +227,7 @@
             "tag": "#GY0C22L",
             "name": "KarimCMonCopain",
             "role": "elder",
-            "lastSeen": "20240323T002601.000Z",
+            "lastSeen": "20240323T142236.000Z",
             "expLevel": 52,
             "trophies": 7672,
             "arena": {
@@ -236,7 +236,7 @@
             },
             "clanRank": 13,
             "previousClanRank": 13,
-            "donations": 150,
+            "donations": 158,
             "donationsReceived": 320,
             "clanChestPoints": 0
         },
@@ -373,7 +373,7 @@
             "clanRank": 21,
             "previousClanRank": 21,
             "donations": 160,
-            "donationsReceived": 152,
+            "donationsReceived": 160,
             "clanChestPoints": 0
         },
         {

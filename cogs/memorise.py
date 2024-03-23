@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import pickledb
+from constants import *
 
 class Memorise(commands.Cog):
 
@@ -11,8 +12,9 @@ class Memorise(commands.Cog):
     async def memorise(self,ctx,id_j: str):
 
         id_j = id_j.lstrip("#")
-        if len(id_j) > 9:
-            await ctx.send("Ce tag de joueur est trop long")
+        id_j = id_j.upper()
+        if len(id_j) > 10:
+            await ctx.send("Ce tag de joueur est trop long "+KING_CRY)
             return
         
         db = pickledb.load("./database/id_joueur.db","False")
