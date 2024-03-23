@@ -74,8 +74,9 @@ async def main():
         await bot.load_extension("cogs.emote")
         await bot.load_extension("cogs.hgdc")
         await bot.load_extension("cogs.class_jour_gdc")
-        await bot.load_extension("cogs.coffres_texte")
+        await bot.load_extension("cogs.coffres_t")
         await bot.load_extension("cogs.get_hgdc")
+        await bot.load_extension("cogs.coffres_j")
 
         await bot.start(BOTTOKEN)
 

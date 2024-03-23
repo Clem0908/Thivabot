@@ -7,9 +7,11 @@
 **class_v**
 -> Affiche le top victoires en guerre des joueurs du clan
 **coffres**
+-> Liste tes coffres
+**coffres_j**
 -> Liste les coffres d'un joueur
-**coffres_texte**
--> Liste les coffres d'un joueur sous forme de texte
+**coffres_t**
+-> Liste tes coffres sous forme de texte
 **connexion**
 -> Affiche date et heure de connexion de tous les membres du clan
 **connexion_j [ID]**

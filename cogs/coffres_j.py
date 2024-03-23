@@ -1,29 +1,26 @@
 import discord
 from discord.ext import commands
-import pickledb
 import asyncio
 import requests
 from constants import *
 import tokens
 import time
 
-class Coffres_texte(commands.Cog):
+class Coffres_j(commands.Cog):
 
     def __init__(self,bot):
         self.bot = bot
 
     @commands.command()
-    async def coffres_texte(self,ctx):
+    async def coffres_j(self,ctx,id_j: str):
 
-        APICRTOKEN = tokens.getApiCrToken()
-        db = pickledb.load("./database/id_joueur.db","False")
-        id_j = db.get(str(ctx.author))
-        
-        if db.exists(str(ctx.author)) == False:
+        id_j = id_j.lstrip("#")  
 
-            await ctx.send("Tu n'as pas d'ID enregistré, je t'invite à le faire avec : ```!T memorise [ID]```")
+        if len(id_j) > 9:
+            await ctx.send("Ce tag de joueur est trop long")
             return
 
+        APICRTOKEN = tokens.getApiCrToken()
         PARAMS = {'Authorization': 'Bearer '+APICRTOKEN} 
         r = requests.get(url = APICRURL+"/players/%23"+id_j+"/upcomingchests", auth=None, params = PARAMS)
         r1 = requests.get(url = APICRURL+"/players/%23"+id_j, auth=None, params = PARAMS)
@@ -100,4 +97,4 @@ class Coffres_texte(commands.Cog):
             return
 
 async def setup(bot):
-    await bot.add_cog(Coffres_texte(bot))
+    await bot.add_cog(Coffres_j(bot))

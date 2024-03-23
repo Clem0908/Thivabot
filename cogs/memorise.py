@@ -11,6 +11,10 @@ class Memorise(commands.Cog):
     async def memorise(self,ctx,id_j: str):
 
         id_j = id_j.lstrip("#")
+        if len(id_j) > 9:
+            await ctx.send("Ce tag de joueur est trop long")
+            return
+        
         db = pickledb.load("./database/id_joueur.db","False")
 
         if db.exists(str(ctx.author)) == True:
