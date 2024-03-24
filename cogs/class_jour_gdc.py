@@ -21,7 +21,11 @@ class Classjourgdc(commands.Cog):
         r = requests.get(url = APICRURL+"/clans/%23"+id_c+"/currentriverrace", auth=None, params = PARAMS)
     
         if r.status_code == 200:
-            
+           
+            f = open("./database/clan.json","r",encoding="utf-8")
+            dbLog = json.load(f)
+            f.close()
+
             await ctx.send("Classement de GDC du jour:")
             data = r.json()
 
@@ -33,11 +37,17 @@ class Classjourgdc(commands.Cog):
 
             string = "```"
             listeJoueurs = []
-            
+
+            joueursPresents = ""
+            for i in range(0,len(dbLog['memberList'])):
+                joueursPresents = joueursPresents+str(dbLog['memberList'][i]['tag'])+";"
+
             for i in range(0,len(data['clan']['participants'])):
 
                 obj_i = data['clan']['participants'][i]
-                listeJoueurs.append(str(obj_i['fame']) + " | "+str(obj_i['name']))
+                # Le joueur est dans le clan
+                if obj_i['tag'] in joueursPresents:
+                    listeJoueurs.append(str(obj_i['fame']) + " | "+str(obj_i['name']))
 
             listeJoueurs.sort(key = lambda x: int(x.split(" |")[0]),reverse=True)
 

@@ -263,9 +263,9 @@ async def log_du_clan():
                             break
 
                     n_string = member[i+2:len(member)]
-                    if n_string == "#UUPRGQL9R" or n_string == "#UR99YRUYY" or n_string == "#V2V8PPYVJ" or n_string == "#U22YR02C8" or n_string == "#CVG80L0GY":
+                    if n_string == "#UUPRGQL9R" or n_string == "#UR99YRUYY" or n_string == "#V2V8PPYVJ" or n_string == "#U22YR02C8" or n_string == "#CVG80L0GY" or n_string == "#2CYY0RPV":
                         
-                        await channel.send("Un BB/DD/VV est arrivé !")
+                        await channel.send("Renforts de GDC")
 
                     else:
 
