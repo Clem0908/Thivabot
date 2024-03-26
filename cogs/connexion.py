@@ -3,6 +3,7 @@ import datetime
 import discord
 from discord.ext import commands
 from constants import *
+from FUSEAU import *
 import tokens
 
 class Connexion(commands.Cog):
@@ -28,7 +29,7 @@ class Connexion(commands.Cog):
 
             for i in range(0,len(data['memberList'])):
                 temps = datetime.datetime.strptime(data['memberList'][i]['lastSeen'], "%Y%m%dT%H%M%S.000Z")
-                temps = temps + datetime.timedelta(hours=2)
+                temps = temps + datetime.timedelta(hours=FUSEAU)
                 nom = data['memberList'][i]['name']
                 tab_trie.append(str(temps)+" | "+nom+"\n")
 
@@ -69,7 +70,7 @@ class Connexion(commands.Cog):
 
                 if id_j == data['memberList'][i]['tag'].lstrip('#'):
                     temps = datetime.datetime.strptime(data['memberList'][i]['lastSeen'], "%Y%m%dT%H%M%S.000Z")
-                    temps = temps + datetime.timedelta(hours=2)
+                    temps = temps + datetime.timedelta(hours=FUSEAU)
                     nom = data['memberList'][i]['name']
                     string = string+str(temps)+" | "+nom+"\n"
 

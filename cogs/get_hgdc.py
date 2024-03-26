@@ -4,6 +4,7 @@ import json
 from discord.ext import commands
 import tokens
 from constants import *
+from FUSEAU import *
 
 class Get_hgdc(commands.Cog):
 
@@ -26,8 +27,14 @@ class Get_hgdc(commands.Cog):
 
             if 'Z' in str_date:
                 
+                h = int(str_date[9:11]) + int(FUSEAU)
                 hgdc = ""
-                hgdc += str_date[9:11]+":"+str_date[11:13]+":"+str_date[13:15]+" UTC"
+                
+                if str(FUSEAU) == "1":            
+                    hgdc += str(h)+":"+str_date[11:13]+":"+str_date[13:15]+" UTC+"+str(FUSEAU)+" - (Paris - heure d'hiver)"
+                if str(FUSEAU) == "2":
+                    hgdc += str(h)+":"+str_date[11:13]+":"+str_date[13:15]+" UTC+"+str(FUSEAU)+" - (Paris - heure d'été)"
+
                 await ctx.send(hgdc)
 
             else:

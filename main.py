@@ -77,6 +77,7 @@ async def main():
         await bot.load_extension("cogs.coffres_t")
         await bot.load_extension("cogs.get_hgdc")
         await bot.load_extension("cogs.coffres_j")
+        await bot.load_extension("cogs.changer_fuseau")
 
         await bot.start(BOTTOKEN)
 

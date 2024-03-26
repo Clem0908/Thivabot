@@ -1,5 +1,6 @@
 ```
 bye
+changer_fuseau [int] - paramètre UTC+[int]
 changer_pseudo [@membre/membre#ID] [str] 
 cloner - ce salon
 cloner_et_supprimer - ce salon
