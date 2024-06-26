@@ -51,29 +51,55 @@ def read_csv():
 
     fd = open(PATH+MONTH+YEAR+EXT,"r")
     string = fd.read()
+    fd.close()
 
-    i = 0
-    j = 0
-    p_list = []
-    valuesCsv = ""
-    cpt = 0
+    tupleList = []
+    tupleStr = ""
+
     for c in string:
         if c != '\n':
-            if c != ',':
-                valuesCsv += c
-            else:
-                if cpt == 2:
-                    oldDecksUnused = int(valuesCsv)
-                    valuesCsv = ""
-                cpt = cpt + 1
-                valuesCsv = ""
+            tupleStr += c
         else:
-            cpt = 0
-            valuesCsv = ""
+            tupleStr += '\n'
+            tupleList.append(tupleStr)
+            tupleStr = ""
 
+    nameStr = ""
+    IDStr = ""
+    unusedDecksStr = ""
+    missedPercentage = ""
+
+    data = request()
+    f = open("./database/clan.json","r")
+    data1 = json.load(f)
+    l = []
+
+    for i in range(0,len(data1['memberList'])):
+        l.append(str(data1['memberList'][i]['tag']))
+
+    
+    fd = open(PATH+MONTH+YEAR+EXT,"w")
+    
+    for s in tupleList:
+        s = s.split(',') 
+        nameStr = s[0]
+        IDStr = s[1]
+        unusedDecksStr = s[2]
+        missedPercentage = s[3]
+        for i in range(0,len(data['clan']['participants'])): 
+            p = data['clan']['participants'][i]
+        
+            # Joueur dans le clan
+            if str(p['tag']) in l and str(p['tag']) == nameStr:
+                unusedDecks = 4 - int(str(p['decksUsedToday']))
+                unusedDecks = unusedDecks + int(ununsedDecksStr)
+                percentage = (unusedDecks * 100) / 64
+                INSERT = nameStr+","+IDStr+","+str(unusedDecks)+","+str(percentage)+"\n"
+                fd.write(INSERT)
 
     fd.close()
-    return p_list
+    f.close()
+    return 
 
 def csvTB():
 
@@ -88,9 +114,6 @@ def csvTB():
     
     else:
 
-        p_list = read_csv()
-        print(p_list)
+        read_csv()
 
     return
-
-csvTB()

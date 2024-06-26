@@ -79,6 +79,7 @@ async def main():
         await bot.load_extension("cogs.get_hgdc")
         await bot.load_extension("cogs.coffres_j")
         await bot.load_extension("cogs.changer_fuseau")
+        await bot.load_extension("cogs.get_csv")
 
         await bot.start(BOTTOKEN)
 
@@ -155,15 +156,11 @@ async def gdc(channel_id, message):
     command = bot.get_command("inactifs")
 
     if today.weekday() != 3:
-        # CSV routine
-        csvTB.csv()
-
+        csvTB.csvTB()
         await command(ina_chan)
     
     elif today.weekday() == 3 and dt.hour > 12:
-        #CSV routine
-        csvTB.csv()
-
+        csvTB.csvTB()
         await command(ina_chan)
 
 scheduler.add_job(gdc,'cron',day_of_week='mon',hour=8,minute=0,args=[GDC_CHAN,GDC_EMOJI+GDC_MSG+"4 va se terminer\n"+GDC_MENTION],misfire_grace_time=180)
