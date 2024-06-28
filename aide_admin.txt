@@ -7,7 +7,8 @@ cloner_et_supprimer - ce salon
 effacer [int]
 effacer_contient [str]
 envoyer_amour
-get_csv [1-12] [20XX] 
+get_csv - inactivité du mois en cours
+get_csv [1-12] [20XX] - inactivité du mois de l'année demandé
 hgdc [int] [int] - paramètre l'heure de dernier rappel de guerre
 memorise_a [@membre] [ID]
 supprimer - ce salon
