@@ -20,11 +20,13 @@ def request():
     if r.status_code == 200:
         data = r.json()
         return data
+    print("csvTB.request() : endpoint currentriverrace failed")
     return None
 
 def insert_csv():
 
     fd = open(PATH+MONTH+YEAR+EXT,"w")
+    fd.write("Joueur,ID,Combats manqués,Pourcentage d'inactivité\n")
     data = request()
     f = open("./database/clan.json","r")
     data1 = json.load(f)
@@ -63,7 +65,6 @@ def read_csv():
             tupleStr += '\n'
             tupleList.append(tupleStr)
             tupleStr = ""
-
     nameStr = ""
     IDStr = ""
     unusedDecksStr = ""
@@ -76,9 +77,9 @@ def read_csv():
 
     for i in range(0,len(data1['memberList'])):
         l.append(str(data1['memberList'][i]['tag']))
-
     
     fd = open(PATH+MONTH+YEAR+EXT,"w")
+    fd.write("Joueur,ID,Combats manqués,Pourcentage d'inactivité\n")
     
     for s in tupleList:
         s = s.split(',') 
@@ -86,13 +87,12 @@ def read_csv():
         IDStr = s[1]
         unusedDecksStr = s[2]
         missedPercentage = s[3]
-        for i in range(0,len(data['clan']['participants'])): 
+        # Joueur dans le clan
+        for i in range(0,len(data['clan']['participants'])):
             p = data['clan']['participants'][i]
-        
-            # Joueur dans le clan
-            if str(p['tag']) in l and str(p['tag']) == nameStr:
+            if str(p['tag']) == IDStr and str(p['tag']) in l:
                 unusedDecks = 4 - int(str(p['decksUsedToday']))
-                unusedDecks = unusedDecks + int(ununsedDecksStr)
+                unusedDecks = unusedDecks + int(unusedDecksStr)
                 percentage = (unusedDecks * 100) / 64
                 INSERT = nameStr+","+IDStr+","+str(unusedDecks)+","+str(percentage)+"\n"
                 fd.write(INSERT)
@@ -104,7 +104,8 @@ def read_csv():
 def csvTB():
 
     if os.path.exists(PATH+MONTH+YEAR+EXT) == False:
-
+        
+        print("csvTB.csvTB() : file inactifs-"+MONTH+YEAR+EXT+" does not exist, creation...")
         os.system("touch "+PATH+MONTH+YEAR+EXT)
         fd = open(PATH+MONTH+YEAR+EXT,"w")
         fd.write("Joueur,ID,Combats manqués,Pourcentage d'inactivité\n")
@@ -113,7 +114,8 @@ def csvTB():
         return
     
     else:
-
+        
+        print("csvTB.csvTB() : updating csv file...")
         read_csv()
 
     return
