@@ -1,1 +1,1 @@
-FUSEAU=2
+FUSEAU=1
