@@ -200,7 +200,9 @@ async def log_du_clan():
     r = requests.get(url = APICRURL+"/clans/%23"+id_c, auth=None, params = PARAMS)
     channel = bot.get_channel(LOG_CHAN)
 
-    if r.status_code == 200:
+        
+
+    if r.status_code == 200 and os.path.exists("./database/clan.json") is True:
 
         data = r.json()
 
@@ -333,6 +335,12 @@ async def log_du_clan():
 
         with open("./database/clan.json","w",encoding="utf-8") as f:
             json.dump(data,f,ensure_ascii=False,indent=4)
+
+    else:
+
+        f = open("./database/clan.json","w",encoding="utf-8")
+        data = r.json()
+        json.dump(data,f,ensure_ascii=False,indent=4)
 
     if r.status_code == (400 or 403 or 404 or 429 or 500 or 503):
 
