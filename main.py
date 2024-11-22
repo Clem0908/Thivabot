@@ -153,7 +153,7 @@ async def gdc(channel_id, message):
     ina_chan = bot.get_channel(INA_CHAN)
     command = bot.get_command("inactifs")
 
-    if dt.hour() == HEURE and dt.minute() == MINUTE:
+    if dt.hour == HEURE and dt.minute == MINUTE:
         await command(ina_chan)
 
 async def autoclass_jour_gdc(channel_id):
