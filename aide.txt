@@ -31,6 +31,8 @@ ID représente votre identifiant Clash Royale, retrouvable sur votre profil dans
 -> Donne le lien RoyaleAPI vers le joueur demandé
 **info_clan [ID]**
 -> Donne le lien RoyaleAPI vers le clan demandé 
+**lj**
+-> Affiche les joueurs du clan, leur ID et leur rôle
 **memorise [ID]**
 -> Enregistre l'ID donné et l'associe à votre compte Discord
 **supprime**

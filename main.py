@@ -61,6 +61,7 @@ async def main():
         await bot.load_extension("cogs.ij")
         await bot.load_extension("cogs.info_clan")
         await bot.load_extension("cogs.inactifs")
+        await bot.load_extension("cogs.lj")
         await bot.load_extension("cogs.connexion")
         await bot.load_extension("cogs.memorise")
         await bot.load_extension("cogs.supprime")
