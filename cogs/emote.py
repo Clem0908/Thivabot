@@ -8,8 +8,8 @@ class Emote(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def emote(self,ctx, nom: str):
-        
+    async def emote(self,ctx, nom: str=None):
+       
         if nom == "amour":
 
             await ctx.send(file=discord.File("./gifs/amour.gif"))

@@ -1,34 +1,39 @@
+*Liste des commandes disponibles*
+
+Les commandes comportant "[mot]" nécessitent d'être adaptées selon votre contexte d'utilisation.
+ID représente votre identifiant Clash Royale, retrouvable sur votre profil dans le jeu.
+
 **bateau**
--> Affiche le classement actuel du clan pour le jour de guerre
+-> Affiche le classement du clan lors du jour de guerre
 **cherche_id [@Nom_Discord#1234]**
--> Thivabot envoie l'ID du joueur demandé si elle le connaît
+-> Affiche l'ID Clash Royale d'un joueur via son nom Discord, si connu
 **class_jour_gdc**
--> Affiche le classement des joueurs au jour de guerre actuel
+-> Affiche le classement des joueurs par points au jour de guerre actuel
 **class_v**
 -> Affiche le top victoires en guerre des joueurs du clan
 **coffres**
--> Liste tes coffres
-**coffres_j**
--> Liste les coffres d'un joueur
+-> Liste vos prochains coffres, pré-requis : avoir enregistré son ID Clash Royale via la commande _memorise_
+**coffres_j [ID]**
+-> Liste les prochains coffres d'un joueur sous forme de texte
 **coffres_t**
--> Liste tes coffres sous forme de texte
+-> Liste vos prochains coffres sous forme de texte, pré-requis : avoir enregistré son ID Clash Royale via la commande _memorise_
 **connexion**
--> Affiche date et heure de connexion de tous les membres du clan
+-> Affiche la date et l'heure de la dernière connexion de tous les membres du clan
 **connexion_j [ID]**
--> Affiche date et heure de connexion d'un joueur
+-> Affiche la date et l'heure de la dernière connexion d'un joueur
 **emote [nom]**
--> Thivabot envoie l'emote demandée en GIF
+-> Affiche l'emote demandée en GIF, liste les emotes disponibles si aucun argument donnée ou si l'argument est incorrect 
 **get_hgdc**
--> Donne l'heure UTC du début de la guerre
+-> Affiche l'heure UTC du début de la guerre
 **igdc**
--> Affiche le nombre de participants journalier
+-> Affiche le nombre de participants à la guerre du jour
 **ij [ID]**
--> Renvoie le lien RoyaleAPI vers le joueur demandé
+-> Donne le lien RoyaleAPI vers le joueur demandé
 **info_clan [ID]**
--> Renvoie le lien RoyaleAPI vers le clan demandé 
+-> Donne le lien RoyaleAPI vers le clan demandé 
 **memorise [ID]**
--> Thivabot enregistre l'ID donné et l'associe à ton compte Discord
+-> Enregistre l'ID donné et l'associe à votre compte Discord
 **supprime**
--> Thivabot supprime ton ID enregistré si cela a été fait précédemment
+-> Supprime l'ID enregistré si cela a été fait précédemment
 **topfr**
 -> Affiche le classement du clan en GDC
