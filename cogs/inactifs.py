@@ -47,16 +47,19 @@ class Inactifs(commands.Cog):
                         if decks > 1 and decks < 4:
                             ptit_ina.append(str(name)+" "+str(decks)+"/4")
 
+            big_ina_sorted = sorted(big_ina, key=lambda s: s.upper())
+            ptit_ina_sorted = sorted(ptit_ina, key=lambda s: s.upper())
+
             #Conversion en string
             for i in range(0,len(big_ina)):
-                string_big_ina = string_big_ina + str(big_ina[i])+"\n"
+                string_big_ina = string_big_ina + str(big_ina_sorted[i])+"\n"
             string_big_ina = string_big_ina + "```"
             
             await ctx.send("Bigs inactifs (0 ou 1 deck/4 utilisés) :\n"+string_big_ina)
             
             #Conversion en string
             for i in range(0,len(ptit_ina)):
-                string_ptit_ina = string_ptit_ina + str(ptit_ina[i])+"\n"
+                string_ptit_ina = string_ptit_ina + str(ptit_ina_sorted[i])+"\n"
             string_ptit_ina = string_ptit_ina + "```"
             await ctx.send("Ptits inactifs (2 ou 3 decks/4 utilisés) :\n"+string_ptit_ina)
             await ctx.send("J'ai fini de lister")
