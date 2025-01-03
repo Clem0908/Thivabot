@@ -337,16 +337,10 @@ async def log_du_clan():
         with open("./database/clan.json","w",encoding="utf-8") as f:
             json.dump(data,f,ensure_ascii=False,indent=4)
 
-    else:
-
-        f = open("./database/clan.json","w",encoding="utf-8")
-        data = r.json()
-        json.dump(data,f,ensure_ascii=False,indent=4)
-
-    if r.status_code == (400 or 403 or 404 or 429 or 500 or 503):
+    if r.status_code != 200:
 
         channel = bot.get_channel(DEBUG_CHAN)
-        await channel.send("Erreur requête (log_du_clan)")
+        await channel.send("log_du_clan : "+str(r.status_code)+", "+str(r.reason)+", "+str(r.message))
         return
 
 if __name__ == "__main__":
