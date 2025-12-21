@@ -17,10 +17,7 @@ class Coffres(commands.Cog):
     
         print("[INFO] : !T coffres")
         APICRTOKEN = tokens.getApiCrToken()
-        """
-        db = pickledb.load("./database/id_joueur.db","False")
-        id_j = db.get(str(ctx.author))
-        """
+
         db = PickleDB("./database/id_joueur.db")
         await db.load()
         id_j = await db.get(str(ctx.author))
@@ -149,7 +146,7 @@ class Coffres(commands.Cog):
         else:
 
             channel = self.bot.get_channel(DEBUG_CHAN)
-            await channel.send("[ERREUR] : !T coffres - HTTP : " + r.status_code + " | " r1.status_code)
+            await channel.send("[ERREUR] : !T coffres - HTTP : " + r.status_code + " | " + r1.status_code)
 
             return
 
