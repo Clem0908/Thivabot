@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-import pickledb
+from pickledb import PickleDB
 import asyncio
 import requests
 from constants import *
@@ -14,12 +14,18 @@ class Coffres(commands.Cog):
 
     @commands.command()
     async def coffres(self,ctx):
-
+    
+        print("[INFO] : !T coffres")
         APICRTOKEN = tokens.getApiCrToken()
+        """
         db = pickledb.load("./database/id_joueur.db","False")
         id_j = db.get(str(ctx.author))
-        
-        if db.exists(str(ctx.author)) == False:
+        """
+        db = PickleDB("./database/id_joueur.db")
+        await db.load()
+        id_j = await db.get(str(ctx.author))
+
+        if id_j is None:
 
             await ctx.send("Tu n'as pas d'ID enregistré, je t'invite à le faire avec : ```!T memorise [ID]```")
             return
@@ -27,7 +33,7 @@ class Coffres(commands.Cog):
         PARAMS = {'Authorization': 'Bearer '+APICRTOKEN} 
         r = requests.get(url = APICRURL+"/players/%23"+id_j+"/upcomingchests", auth=None, params = PARAMS)
         r1 = requests.get(url = APICRURL+"/players/%23"+id_j, auth=None, params = PARAMS)
-        
+
         if r.status_code == 200 and r1.status_code == 200:
 
             data = r.json()
@@ -143,7 +149,7 @@ class Coffres(commands.Cog):
         else:
 
             channel = self.bot.get_channel(DEBUG_CHAN)
-            await channel.send("[!T coffres] Erreur requête/API")
+            await channel.send("[ERREUR] : !T coffres - HTTP : " + r.status_code + " | " r1.status_code)
 
             return
 
