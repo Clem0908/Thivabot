@@ -11,12 +11,6 @@ ID représente votre identifiant Clash Royale, retrouvable sur votre profil dans
 -> Affiche le classement des joueurs par points au jour de guerre actuel
 **class_v**
 -> Affiche le top victoires en guerre des joueurs du clan
-**coffres**
--> Liste vos prochains coffres, pré-requis : avoir enregistré son ID Clash Royale via la commande _memorise_
-**coffres_j [ID]**
--> Liste les prochains coffres d'un joueur sous forme de texte
-**coffres_t**
--> Liste vos prochains coffres sous forme de texte, pré-requis : avoir enregistré son ID Clash Royale via la commande _memorise_
 **connexion**
 -> Affiche la date et l'heure de la dernière connexion de tous les membres du clan
 **connexion_j [ID]**

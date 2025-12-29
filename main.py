@@ -65,7 +65,6 @@ async def main():
         await bot.load_extension("cogs.connexion")
         await bot.load_extension("cogs.memorise")
         await bot.load_extension("cogs.supprime")
-        await bot.load_extension("cogs.coffres")
         await bot.load_extension("cogs.cherche_id")
         await bot.load_extension("cogs.igdc")
         await bot.load_extension("cogs.memorise_a")
@@ -75,9 +74,7 @@ async def main():
         await bot.load_extension("cogs.emote")
         await bot.load_extension("cogs.hgdc")
         await bot.load_extension("cogs.class_jour_gdc")
-        await bot.load_extension("cogs.coffres_t")
         await bot.load_extension("cogs.get_hgdc")
-        await bot.load_extension("cogs.coffres_j")
         await bot.load_extension("cogs.changer_fuseau")
 
         await bot.start(BOTTOKEN)
