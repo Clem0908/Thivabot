@@ -53,6 +53,9 @@ async def trad_role(string):
 async def on_ready():
 
     logger.info("Le bot est connecté sous : {0.user}".format(bot))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("debug", help="Exécuter Thivabot en mode déboggage", type=bool)
+    args = parser.parse_args()
 
     if args.debug is False:
         
@@ -370,9 +373,4 @@ async def log_du_clan():
         return
 
 if __name__ == "__main__":
-
-    parser = argparse.ArgumentParser()
-    parser.add_argument("debug", help="Exécuter Thivabot en mode déboggage", type=bool)
-    args = parser.parse_args()
-
     asyncio.run(main())
