@@ -1,4 +1,3 @@
-import argparse
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import datetime
@@ -53,17 +52,16 @@ async def trad_role(string):
 async def on_ready():
 
     logger.info("Le bot est connecté sous : {0.user}".format(bot))
-    parser = argparse.ArgumentParser()
-    parser.add_argument("debug", help="Exécuter Thivabot en mode déboggage", type=bool)
-    args = parser.parse_args()
 
-    if args.debug is False:
-        
+    if DEBUG is False:
+        print("c la prod")
+        """        
         channel = bot.get_channel(DEBUG_CHAN)
         await channel.send("Lancée :green_circle:")
 
         log_du_clan.start()
         scheduler.start()
+        """
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -373,4 +371,5 @@ async def log_du_clan():
         return
 
 if __name__ == "__main__":
+
     asyncio.run(main())
