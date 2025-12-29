@@ -54,14 +54,13 @@ async def on_ready():
     logger.info("Le bot est connecté sous : {0.user}".format(bot))
 
     if DEBUG is False:
-        print("c la prod")
-        """        
+                
         channel = bot.get_channel(DEBUG_CHAN)
         await channel.send("Lancée :green_circle:")
 
         log_du_clan.start()
         scheduler.start()
-        """
+        
 
 @bot.event
 async def on_command_error(ctx, error):
