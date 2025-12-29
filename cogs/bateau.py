@@ -78,19 +78,19 @@ class Bateau(commands.Cog):
                 return
 
             if "Les Initiés" in listeClans[0]:
-                await ctx.send("Nous sommes 1er, merci à vous "+PRINCESS_GLASSES)
+                await ctx.send("Nous sommes 1er "+PRINCESS_GLASSES)
 
             if "Les Initiés" in listeClans[1]:
-                await ctx.send("Nous sommes 2e "+KING_CRY)
+                await ctx.send("Nous sommes 2èmes "+KING_CRY)
 
             if "Les Initiés" in listeClans[2]:
-                await ctx.send("Nous sommes 3e "+GOBLIN_STUCKED)
+                await ctx.send("Nous sommes 3èmes "+GOBLIN_STUCKED)
 
             if "Les Initiés" in listeClans[3]:
-                await ctx.send("Nous sommes 4e "+PRINCESS_ANGRY)
+                await ctx.send("Nous sommes 4èmes "+PRINCESS_ANGRY)
 
             if "Les Initiés" in listeClans[4]:
-                await ctx.send("Nous sommes derniers, c koi sa :rage:")
+                await ctx.send("Nous sommes derniers :rage:")
 
         else:
 

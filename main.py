@@ -1,14 +1,18 @@
-import discord
-import datetime
+import argparse
 import asyncio
-import os
-import requests
-import pickledb
-import json
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+import datetime
+import discord
 from discord.ext import tasks
 from discord.ext import commands
 from discord.utils import get
-from apscheduler.schedulers.asyncio import AsyncIOScheduler
+import json
+import logging
+from logging.handlers import RotatingFileHandler
+import os
+import pickledb
+import requests
+
 from constants import *
 from HH_MM import *
 import tokens
@@ -17,6 +21,19 @@ scheduler = AsyncIOScheduler()
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!T ",intents=intents)
+
+# Logs
+handler = RotatingFileHandler(
+    'logs/main.log',
+    maxBytes=5000,
+    backupCount=1
+)
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger = logging.getLogger('main_logger')
+logger.setLevel(logging.DEBUG)
+logger.addHandler(handler)
+# Logs
 
 # Fonction pour traduire les noms des rôles en Français 
 async def trad_role(string):
@@ -35,12 +52,15 @@ async def trad_role(string):
 @bot.event
 async def on_ready():
 
-    print("Le bot est connecté sous : {0.user}".format(bot))
-    channel = bot.get_channel(DEBUG_CHAN)
-    await channel.send("Lancée :green_circle:")
+    logger.info("Le bot est connecté sous : {0.user}".format(bot))
 
-    log_du_clan.start()
-    scheduler.start()
+    if args.debug is False:
+        
+        channel = bot.get_channel(DEBUG_CHAN)
+        await channel.send("Lancée :green_circle:")
+
+        log_du_clan.start()
+        scheduler.start()
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -56,6 +76,7 @@ async def main():
 
     async with bot:
         await bot.load_extension("cogs.aide")
+        await bot.load_extension("cogs.course")
         await bot.load_extension("cogs.effacer")
         await bot.load_extension("cogs.envoyer_amour")
         await bot.load_extension("cogs.ij")
@@ -82,7 +103,8 @@ async def main():
 @bot.command()
 @commands.has_permissions(administrator=True)
 async def bye(ctx):
-
+    
+    logger.info("!T bye")
     channel = bot.get_channel(DEBUG_CHAN)
     await channel.send("Arrêtée :red_circle:")
     await bot.close()
@@ -134,6 +156,7 @@ async def changer_pseudo(ctx, membre: discord.Member, pseudo):
 
 async def gdc(channel_id, message):
     
+    logger.info("gdc")
     today = datetime.date.today()
     dt = datetime.datetime.today()
 
@@ -157,6 +180,7 @@ async def gdc(channel_id, message):
 
 async def autoclass_jour_gdc(channel_id):
     
+    logger.info("autoclass_jour_gdc")
     channel = bot.get_channel(channel_id)
 
     command = bot.get_command("class_jour_gdc")
@@ -182,8 +206,8 @@ scheduler.add_job(gdc,'cron',day_of_week='sun',hour=20,minute=0,args=[GDC_CHAN,G
 
 async def autotopfr(channel_id):
     
+    logger.info("autotopfr")
     channel = bot.get_channel(channel_id)
-
     command = bot.get_command("topfr")
     await command(channel)
 
@@ -339,10 +363,16 @@ async def log_du_clan():
             json.dump(data,f,ensure_ascii=False,indent=4)
 
     if r.status_code != 200:
-
+        
+        logger.warning("log_du_clan : "+str(r.status_code))
         channel = bot.get_channel(DEBUG_CHAN)
         await channel.send("log_du_clan : "+str(r.status_code)+", "+str(r.reason)+", "+str(r.message))
         return
 
 if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("debug", help="Exécuter Thivabot en mode déboggage", type=bool)
+    args = parser.parse_args()
+
     asyncio.run(main())

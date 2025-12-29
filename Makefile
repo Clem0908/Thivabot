@@ -2,4 +2,6 @@ install:
 	chmod +x ./configure
 	./configure
 run:
-	./venv/bin/python main.py 2> stderr.log 1> stdout.log
+	./venv/bin/python main.py debug=False
+run-debug:
+	./venv/bin/python main.py debug=True
