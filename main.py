@@ -1,5 +1,4 @@
 import argparse
-
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import datetime
@@ -39,10 +38,21 @@ logger.addHandler(handler)
 def create_config():
     if os.path.exists("config.json") is False:
         with open("config.json", "w") as f:
-            conf = {"debug": False}
+            conf = {"debug": False, "clanid": "000000"}
             f.write(json.dumps(conf))
 
 def update_config(args):
+
+    with open("config.json", "r") as f:
+        conf_raw = f.read()
+        conf = json.loads(conf_raw)
+
+    conf["debug"] = args.debug
+
+    with open("config.json", "w") as f:
+        f.write(json.dumps(conf))
+
+def update_config_discord(args):
 
     with open("config.json", "r") as f:
         conf_raw = f.read()
@@ -80,9 +90,7 @@ async def on_ready():
 
     logger.info("Le bot est connecté sous : {0.user}".format(bot))
 
-    print(read_config("debug"))
     if read_config("debug") == "false":
-        print("dans le if")            
         channel = bot.get_channel(DEBUG_CHAN)
         await channel.send("Lancée :green_circle:")
 
