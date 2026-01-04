@@ -26,6 +26,3 @@ CLASS_JOUR_CHAN=1126883173947686973
 
 # Messages
 GDC_MSG="\nLe jour de guerre n°"
-
-# For debugging
-DEBUG=False

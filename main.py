@@ -1,3 +1,5 @@
+import argparse
+
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 import datetime
@@ -34,6 +36,31 @@ logger.setLevel(logging.DEBUG)
 logger.addHandler(handler)
 # Logs
 
+def create_config():
+    if os.path.exists("config.json") is False:
+        with open("config.json", "w") as f:
+            conf = {"debug": False}
+            f.write(json.dumps(conf))
+
+def update_config(args):
+
+    with open("config.json", "r") as f:
+        conf_raw = f.read()
+        conf = json.loads(conf_raw)
+
+    conf["debug"] = args.debug
+
+    with open("config.json", "w") as f:
+        f.write(json.dumps(conf))
+
+def read_config(param):
+
+    with open("config.json", "r") as f:
+        conf_raw = f.read()
+        conf = dict(json.loads(conf_raw))
+    
+    return conf.get(param, False)
+
 # Fonction pour traduire les noms des rôles en Français 
 async def trad_role(string):
     trad = ""
@@ -53,15 +80,15 @@ async def on_ready():
 
     logger.info("Le bot est connecté sous : {0.user}".format(bot))
 
-    if DEBUG is False:
-                
+    print(read_config("debug"))
+    if read_config("debug") == "false":
+        print("dans le if")            
         channel = bot.get_channel(DEBUG_CHAN)
         await channel.send("Lancée :green_circle:")
 
         log_du_clan.start()
         scheduler.start()
         
-
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CommandNotFound):
@@ -70,7 +97,10 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.BadArgument):
         await ctx.send("Mauvais arguments : pour en savoir plus, tape : `!T aide`")
 
-async def main():
+async def main(args):
+    
+    create_config()
+    update_config(args)
 
     BOTTOKEN = tokens.getBotToken()
 
@@ -371,4 +401,8 @@ async def log_du_clan():
 
 if __name__ == "__main__":
 
-    asyncio.run(main())
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--debug", help="Exécuter Thivabot en mode déboggage", type=str)
+    args = parser.parse_args()
+
+    asyncio.run(main(args))
