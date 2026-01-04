@@ -38,21 +38,10 @@ logger.addHandler(handler)
 def create_config():
     if os.path.exists("config.json") is False:
         with open("config.json", "w") as f:
-            conf = {"debug": False, "clanid": "000000"}
+            conf = {"debug": False}
             f.write(json.dumps(conf))
 
 def update_config(args):
-
-    with open("config.json", "r") as f:
-        conf_raw = f.read()
-        conf = json.loads(conf_raw)
-
-    conf["debug"] = args.debug
-
-    with open("config.json", "w") as f:
-        f.write(json.dumps(conf))
-
-def update_config_discord(args):
 
     with open("config.json", "r") as f:
         conf_raw = f.read()
