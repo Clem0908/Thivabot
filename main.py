@@ -12,6 +12,7 @@ from logging.handlers import RotatingFileHandler
 import os
 import pickledb
 import requests
+import subprocess
 
 from constants import *
 from HH_MM import *
@@ -150,6 +151,30 @@ async def cloner_et_supprimer(ctx, channel: discord.TextChannel = None):
         channel = ctx.channel
     await channel.clone(name=channel.name+"-clone")
     await channel.delete()
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def logs_info(ctx):
+    
+    channel = bot.get_channel(DEBUG_CHAN)
+    command = "grep INFO logs/*.log"
+    stdout = subprocess.check_output(command, shell=True, text=True)
+    message = "```"
+    message += stdout
+    message += "```"
+    await ctx.send(message)
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def logs_warn(ctx):
+    
+    channel = bot.get_channel(DEBUG_CHAN)
+    command = "grep WARNING logs/*.log"
+    stdout = subprocess.check_output(command, shell=True, text=True)
+    message = "```"
+    message += stdout
+    message += "```"
+    await ctx.send(message)
 
 @bot.command()
 @commands.has_permissions(administrator=True)
@@ -393,7 +418,7 @@ async def log_du_clan():
         
         logger.warning("log_du_clan : "+str(r.status_code))
         channel = bot.get_channel(DEBUG_CHAN)
-        await channel.send("log_du_clan : "+str(r.status_code)+", "+str(r.reason)+", "+str(r.message))
+        await channel.send("log_du_clan : "+str(r.status_code))
         return
 
 if __name__ == "__main__":

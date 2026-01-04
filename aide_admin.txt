@@ -1,5 +1,5 @@
 ```
-bye
+bye - redémarrer
 changer_fuseau [int] - paramètre UTC+[int]
 changer_pseudo [@membre/membre#ID] [str] 
 cloner - ce salon
@@ -8,6 +8,8 @@ effacer [int]
 effacer_contient [str]
 envoyer_amour
 hgdc [int] [int] - paramètre l'heure de dernier rappel de guerre
+logs_info - afficher tous les logs/*.log contentant 'INFO'
+logs_warn - afficher tous les logs/*.log contentant 'WARNING'
 memorise_a [@membre] [ID]
 supprimer - ce salon
 ```
