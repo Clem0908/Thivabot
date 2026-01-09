@@ -28,7 +28,17 @@ class Course(commands.Cog):
             listeClans = []
             string = "```"
 
+            if str(data['periodType']) == "colosseum":
+                 await ctx.send("Nous sommes en jour de colisée, il n'y a pas de course de bateaux")
+                 return
+
             if str(data['periodType']) == "warDay":
+
+                if int(str(data.get("clan", {}).get("fame", -1))) >= 10000:
+                    await ctx.send("Notre bateau est arrivé à destination "+PRINCESS_GLASSES)
+
+                if datetime.today().weekday() == 3 and int(str(data.get("clan", {}).get("fame", -1))) == 0:
+                    await ctx.send("Nous sommes le jour de guerre n°1, donc 0 points pour l'instant")
 
                 for i in range(0,len(data['clans'])):
 
@@ -47,7 +57,7 @@ class Course(commands.Cog):
 
             else:
 
-                await ctx.send("Nous sommes en jour d'entraînement ou de colisée")
+                await ctx.send("Nous sommes en jour d'entraînement")
                 return
 
             if "Les Initiés" in listeClans[0]:
