@@ -167,6 +167,11 @@ async def cloner_et_supprimer(ctx, channel: discord.TextChannel = None):
 
 @bot.command()
 @commands.has_permissions(administrator=True)
+async def get_HH_MM(ctx):
+    await ctx.send("Heure de rappel de guerre configuré pour : "+str(HEURE)+"h"+str(MINUTE))
+
+@bot.command()
+@commands.has_permissions(administrator=True)
 async def journal_start(ctx):
     logger.info("log_du_clan() start")
     log_du_clan.start()

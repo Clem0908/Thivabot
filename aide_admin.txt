@@ -7,6 +7,7 @@ cloner_et_supprimer - cloner puis supprimer le salon courant
 effacer [int] - supprimer un nombre de message(s) précédent(s)
 effacer_contient [str] - supprimer le(s) message(s) précédent(s) contenant un terme
 envoyer_amour
+get_HH_MM - afficher l'heure de rappel de guerre défini
 hgdc [int] [int] - définir l'heure de dernier rappel de guerre
 journal_start - démarrer le #journal
 journal_stop - stopper le #journal
