@@ -290,7 +290,7 @@ async def autotopfr(channel_id):
 
 scheduler.add_job(autotopfr,'cron',day_of_week='mon',hour=12,minute=0,args=[LOG_CHAN],misfire_grace_time=180)
 
-@tasks.loop(minutes=1)
+@tasks.loop(minutes=5)
 async def log_du_clan():
 
     APICRTOKEN = tokens.getApiCrToken()
