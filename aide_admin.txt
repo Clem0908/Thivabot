@@ -1,15 +1,17 @@
 ```
-bye - redémarrer
-changer_fuseau [int] - paramètre UTC+[int]
-changer_pseudo [@membre/membre#ID] [str] 
-cloner - ce salon
-cloner_et_supprimer - ce salon
-effacer [int]
-effacer_contient [str]
+bye - stopper Thivabot
+changer_fuseau [int] - paramétrer le fuseau horaire (UTC+[int])
+changer_pseudo [@membre/membre#ID] [str] - définir le pseudo Discord au sein du serveur d'un Membre 
+cloner - cloner le salon courant
+cloner_et_supprimer - cloner puis supprimer le salon courant
+effacer [int] - supprimer un nombre de message(s) précédent(s)
+effacer_contient [str] - supprimer le(s) message(s) précédent(s) contenant un terme
 envoyer_amour
-hgdc [int] [int] - paramètre l'heure de dernier rappel de guerre
+hgdc [int] [int] - définir l'heure de dernier rappel de guerre
+journal_start - démarrer le #journal
+journal_stop - stopper le #journal
 logs_info - afficher tous les logs/*.log contentant 'INFO'
 logs_warn - afficher tous les logs/*.log contentant 'WARNING'
-memorise_a [@membre] [ID]
-supprimer - ce salon
+memorise_a [@membre] [ID] - associer un Membre à un ID
+supprimer - supprimer le salon courant
 ```

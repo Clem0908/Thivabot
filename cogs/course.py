@@ -1,3 +1,4 @@
+from datetime import datetime
 import discord
 import requests
 import json
@@ -26,6 +27,14 @@ class Course(commands.Cog):
             data = r.json()
             listeClans = []
             string = "```"
+
+            if str(data['periodType']) == "warDay" and datetime.today().weekday() == 3 and str(data["clan"]["fame"]) == 0:
+
+                await ctx.send("Nous sommes le 1er jour de guerre, donc 0 points pour l'instant")
+
+            if str(data['periodType']) == "warDay" and str(data["clan"]["fame"]) >= 10000:
+
+                await ctx.send("Nous sommes arrivés à destination :)")
 
             if str(data['periodType']) == "warDay":
 

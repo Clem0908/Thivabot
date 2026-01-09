@@ -16,11 +16,11 @@ ID représente votre identifiant Clash Royale, retrouvable sur votre profil dans
 **connexion_j [ID]**
 -> Affiche la date et l'heure de la dernière connexion d'un joueur
 **course**
--> En construction, affiche les points actuels de la course de guerre, 10 000 pour finir la course
+-> Affiche les points actuels de la course de guerre, 10 000 pour finir la course
 **emote [nom]**
 -> Affiche l'emote demandée en GIF, liste les emotes disponibles si aucun argument donnée ou si l'argument est incorrect 
 **get_hgdc**
--> Affiche l'heure UTC du début de la guerre
+-> Affiche l'heure UTC du début du matchmaking de la guerre, le rappel est souvent à définir quelques minutes après
 **igdc**
 -> Affiche le nombre de participants à la guerre du jour
 **ij [ID]**

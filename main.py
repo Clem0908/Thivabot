@@ -85,8 +85,16 @@ async def on_ready():
         await channel.send("Lancée :green_circle:")
 
         log_du_clan.start()
+        logger.info("Tâche log_du_clan() démarrée")
         scheduler.start()
-        
+
+@bot.event
+async def on_disconnect():
+
+    logger.info("on_disconnect() - Je suis déconnectée")
+    channel = bot.get_channel(DEBUG_CHAN)
+    await channel.send("Déconnectée :orange_circle:")
+
 @bot.event
 async def on_command_error(ctx, error):
     if isinstance(error, commands.errors.CommandNotFound):
@@ -137,6 +145,11 @@ async def bye(ctx):
     await channel.send("Arrêtée :red_circle:")
     await bot.close()
 
+@bot.command(pass_context=True)
+@commands.has_permissions(administrator=True)
+async def changer_pseudo(ctx, membre: discord.Member, pseudo):
+    await membre.edit(nick=pseudo)
+
 @bot.command()
 @commands.has_permissions(administrator=True)
 async def cloner(ctx, channel: discord.TextChannel = None):
@@ -151,6 +164,18 @@ async def cloner_et_supprimer(ctx, channel: discord.TextChannel = None):
         channel = ctx.channel
     await channel.clone(name=channel.name+"-clone")
     await channel.delete()
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def journal_start(ctx):
+    logger.info("log_du_clan() start")
+    log_du_clan.start()
+
+@bot.command()
+@commands.has_permissions(administrator=True)
+async def journal_stop(ctx):
+    logger.info("log_du_clan() stop")
+    log_du_clan.stop()
 
 @bot.command()
 @commands.has_permissions(administrator=True)
@@ -200,11 +225,6 @@ async def supprimer(ctx, channel: discord.TextChannel = None):
     
     if choix.content.lower() in "oui":
         await channel.delete()
-
-@bot.command(pass_context=True)
-@commands.has_permissions(administrator=True)
-async def changer_pseudo(ctx, membre: discord.Member, pseudo):
-    await membre.edit(nick=pseudo)
 
 async def gdc(channel_id, message):
     
