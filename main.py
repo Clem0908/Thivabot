@@ -92,8 +92,7 @@ async def on_ready():
 async def on_disconnect():
 
     logger.info("on_disconnect() - Je suis déconnectée")
-    channel = bot.get_channel(DEBUG_CHAN)
-    await channel.send("Déconnectée :orange_circle:")
+    log_du_clan.stop()
 
 @bot.event
 async def on_command_error(ctx, error):
