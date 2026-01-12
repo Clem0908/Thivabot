@@ -93,6 +93,7 @@ async def on_disconnect():
 
     logger.info("on_disconnect() - Je suis déconnectée")
     log_du_clan.stop()
+    log_du_clan.start()
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -289,7 +290,7 @@ async def autotopfr(channel_id):
 
 scheduler.add_job(autotopfr,'cron',day_of_week='mon',hour=12,minute=0,args=[LOG_CHAN],misfire_grace_time=180)
 
-@tasks.loop(minutes=5)
+@tasks.loop(minutes=2)
 async def log_du_clan():
 
     APICRTOKEN = tokens.getApiCrToken()
