@@ -92,9 +92,11 @@ async def on_ready():
 async def on_disconnect():
 
     logger.info("on_disconnect() - Je suis déconnectée")
-    log_du_clan.stop()
-    log_du_clan.start()
-    logger.info("on_disconnect() - Tâche log_du_clan() redémarrée")
+    if log_du_clan.done() is True:
+        log_du_clan.start()
+        logger.info("on_disconnect() - Tâche log_du_clan() redémarrée")
+    else:
+        logger.info("on_disconnect() - Tâche log_du_clan() non terminée donc non redémarrée")
 
 @bot.event
 async def on_command_error(ctx, error):
