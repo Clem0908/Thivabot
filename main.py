@@ -297,11 +297,10 @@ scheduler.add_job(autotopfr,'cron',day_of_week='mon',hour=12,minute=0,args=[LOG_
 async def log_du_clan():
 
     APICRTOKEN = tokens.getApiCrToken()
-
+    channel = bot.get_channel(LOG_CHAN)
     id_c = "LPRYYG"
     PARAMS = {'Authorization': 'Bearer '+APICRTOKEN}
     r = requests.get(url = APICRURL+"/clans/%23"+id_c, auth=None, params = PARAMS)
-
 
     # Recherche heure début de la guerre
     if datetime.datetime.today().weekday() == 3 and datetime.datetime.today().hour >= 9 and datetime.datetime.today().hour <= 12:
@@ -311,16 +310,14 @@ async def log_du_clan():
             with open("./database/riverrace.json","r",encoding="utf-8") as f:
                 database = json.load(f)
                 if database.get("periodType","") == "training" and data.get("periodType","") != "training":
-                    logger.info("log_du_clan() - Passage en jour de guerre n°1")
+                    logger.info("log_du_clan() - Passage en jour de guerre")
+                    await channel.send("Passage en jour de guerre "+GDC_EMOJI)
             with open("./database/riverrace.json","w",encoding="utf-8") as f:
                 json.dump(data,f,ensure_ascii=False,indent=4)            
         if req_riverrace.status_code == 200 and os.path.exists("./database/riverrace.json") is False:
             data = req_riverrace.json()
             with open("./database/riverrace.json","w",encoding="utf-8") as f:
                 json.dump(data,f,ensure_ascii=False,indent=4)            
-
-
-    channel = bot.get_channel(LOG_CHAN)
 
     if r.status_code == 200 and os.path.exists("./database/clan.json") is False:
         data = r.json()
